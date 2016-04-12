@@ -18,12 +18,6 @@ myApp.controller('mainController', function($scope, $log, $filter,$resource){
 
 
 });
-var searchPeople = function searchPeople($scope,fName,lName,ht,age){
-    return 'MINI MINI';
-};
-var searchPeopleString = searchPeople.toString();
 
-console.log(searchPeopleString);
-//returns the entire function as a string
 
-console.log(angular.injector().annotate(searchPeople));
+
