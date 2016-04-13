@@ -21,6 +21,9 @@ myApp.controller('mainController',['$scope','$log','$timeout','$filter',function
             $scope.handle = "myNewTwitterHandle";
             console.log("scope changed");
         })},3000);
+    var display_message= function(){
+        return $scope.handle.length === 5;
+    };
 
 
 }]);
