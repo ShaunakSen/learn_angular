@@ -7,7 +7,11 @@ myApp.config(function($routeProvider){
             templateUrl:'pages/mini.html',
             controller:'mainController'
         })
-        .when('/shona',{
+        .when('/shona/:num',{
+            templateUrl:'pages/shona.html',
+            controller:'secondController'
+        })
+        .when('/shona/',{
             templateUrl:'pages/shona.html',
             controller:'secondController'
         })
@@ -18,6 +22,7 @@ myApp.controller('mainController',['$scope','$log','$location',function($scope,$
     $scope.name = "MINI";
 }]);
 
-myApp.controller('secondController',['$scope','$log',function($scope,$log){
+myApp.controller('secondController',['$scope','$log','$routeParams',function($scope,$log,$routeParams){
     $scope.name="SHONA";
+    $scope.num = $routeParams.num || 1;
 }]);
