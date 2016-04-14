@@ -16,6 +16,7 @@ myApp.controller('mainController',['$scope','$log','$timeout','$filter','$http',
             }
         });
 
+
     };
     rulesrequest.open("GET","https://api.myjson.com/bins/3ay8z",true);
     rulesrequest.send();
