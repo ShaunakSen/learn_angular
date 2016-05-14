@@ -24,6 +24,7 @@ myApp.directive("searchResult", function () {
             personObject: "=",
             formattedAddressFunction: "&"
         },
+        transclude: true,
         compile: function (elem, attrs) {
             console.log("compiling...");
             console.log(elem.html());
@@ -33,8 +34,7 @@ myApp.directive("searchResult", function () {
                     console.log("post-linking...");
                     console.log(element);
                     console.log(scope.personObject.name);
-                    if(scope.personObject.name == "Buddhu Bhagu")
-                    {
+                    if (scope.personObject.name == "Buddhu Bhagu") {
                         element.removeAttr('class');
                     }
                 }
