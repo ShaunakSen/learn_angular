@@ -23,8 +23,25 @@ myApp.directive("searchResult", function () {
             //personAddress: "@",
             personObject: "=",
             formattedAddressFunction: "&"
+        },
+        compile: function (elem, attrs) {
+            console.log("compiling...");
+            console.log(elem.html());
+            //elem.removeAttr('class')
+            return {
+                post: function (scope, element, attrs) {
+                    console.log("post-linking...");
+                    console.log(element);
+                    console.log(scope.personObject.name);
+                    if(scope.personObject.name == "Buddhu Bhagu")
+                    {
+                        element.removeAttr('class');
+                    }
+                }
+            }
         }
-    };
+    }
+
 });
 
 myApp.controller('mainController', ['$scope', '$log', '$location', function ($scope, $log, $location) {
