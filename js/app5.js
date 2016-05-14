@@ -19,8 +19,10 @@ myApp.directive("searchResult", function () {
         templateUrl: 'directives/searchresult.html',
         replace: true,
         scope: {
-            personName: "@",
-            personAddress: "@"
+            //personName: "@",
+            //personAddress: "@",
+            personObject: "=",
+            formattedAddressFunction: "&"
         }
     };
 });
@@ -28,7 +30,13 @@ myApp.directive("searchResult", function () {
 myApp.controller('mainController', ['$scope', '$log', '$location', function ($scope, $log, $location) {
     $scope.person = {
         name: 'Buddhu Mini',
-        address: '3/1 Badabazar Jhansi 284002'
+        address: '3/1 Badabazar',
+        city: 'Jhansi',
+        state: 'UP',
+        zip: '284002'
+    };
+    $scope.formattedAddress = function (person) {
+        return person.name + " Lives in " + person.address + " which is in " + person.city + " in " + person.state + " " + person.zip;
     };
 
 }]);
