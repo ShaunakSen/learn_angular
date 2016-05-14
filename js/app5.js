@@ -28,13 +28,36 @@ myApp.directive("searchResult", function () {
 });
 
 myApp.controller('mainController', ['$scope', '$log', '$location', function ($scope, $log, $location) {
-    $scope.person = {
-        name: 'Buddhu Mini',
-        address: '3/1 Badabazar',
-        city: 'Jhansi',
-        state: 'UP',
-        zip: '284002'
-    };
+    $scope.people = [
+        {
+            name: 'Buddhu Mini',
+            address: '3/1 Badabazar',
+            city: 'Jhansi',
+            state: 'UP',
+            zip: '284002'
+        },
+        {
+            name: 'Buddhu Shona',
+            address: '3/1 Badabazar',
+            city: 'Jhansi',
+            state: 'UP',
+            zip: '284002'
+        },
+        {
+            name: 'Buddhu Paddy',
+            address: '3/1 Badabazar',
+            city: 'Jhansi',
+            state: 'UP',
+            zip: '284002'
+        },
+        {
+            name: 'Buddhu Bhagu',
+            address: '3/1 Badabazar',
+            city: 'Jhansi',
+            state: 'UP',
+            zip: '284002'
+        }
+    ];
     $scope.formattedAddress = function (person) {
         return person.name + " Lives in " + person.address + " which is in " + person.city + " in " + person.state + " " + person.zip;
     };

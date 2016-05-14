@@ -24,7 +24,7 @@
     <search-result person-object="person"></search-result>
 
     -->
-    <search-result person-object="person" formatted-address-function="formattedAddress(aperson)"></search-result>
+    <search-result ng-repeat="person in people" person-object="person" formatted-address-function="formattedAddress(aperson)"></search-result>
 </div>
 
 
