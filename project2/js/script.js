@@ -1,15 +1,11 @@
 var myApp = angular.module("myModule", []);
 
-myApp.controller("myController", function($scope){
-    var employee;
-    $scope.message = "Hi mini";
-
-    employee = {
-        firsname: "mini",
-        lastname: "sen",
-        gender: "F"
+myApp.controller("myController", function ($scope) {
+    var movie;
+    movie = {
+        name: "Deadpool",
+        path: "img/deadpool.jpg"
     };
-
-    $scope.employee = employee;
+    $scope.movie = movie;
 
 });

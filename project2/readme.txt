@@ -15,3 +15,18 @@ WHAT IS MODULE
     $scope.message = "Hi mini"
     }
      this message property is attached to scope object so it will be available to the view
+
+    What happens if controller name is misspelled??
+    1. data binding wont occur
+    2. we will get an error msg sure but it wont be readable. it points to a url. Soln: use uncompressed
+       version of angular
+
+    What happens if a property name in the binding expr is misspelled?
+    -- no error it wont simply show up
+
+  When u use binding expr with img source attr u get 404 error
+
+    <img src="{{movie.path}}" height="200" width="200" alt="{{movie.name + 'poster'}}"/>
+    this is bcoz initially when DOM loads it send request toload img in path {{movie.path}} which is not valid
+    later when a 2nd request is made after binding expr is evaluated we see the img
+    To solve this we use ng-src.. only 1 proper request will be made here.. no 404 error. no same request made twice
