@@ -30,3 +30,24 @@ WHAT IS MODULE
     this is bcoz initially when DOM loads it send request toload img in path {{movie.path}} which is not valid
     later when a 2nd request is made after binding expr is evaluated we see the img
     To solve this we use ng-src.. only 1 proper request will be made here.. no 404 error. no same request made twice
+____________________________________________________________________________________________________________________
+
+2 way Data binding
+--Keeps model and view in sync at all times. ANy change in one is reflected in the other
+  $scope.message ="ok"  {{message}} -> changes the view on basis of model. Other way round?
+  ng-model updates model when view changes
+  ng-model can be used with: input, select, textarea
+
+ ng-repeat : use $index to find index of item.. use $parent.$index to access parent indices
+ UK index = 0
+     London         index = 0 parentIndex=0
+     Manchester     index = 0 parentIndex=1
+     Birmingham     index = 0 parentIndex=2
+ USA index = 1
+     Los Angeles    index = 1 parentIndex=0
+     Chicago        index = 1 parentIndex=1
+     New York       index = 1 parentIndex=2
+ India index = 2
+     Delhi          index = 2 parentIndex=0
+     Kolkata        index = 2 parentIndex=1
+     Jhansi         index = 2 parentIndex=2

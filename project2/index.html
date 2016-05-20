@@ -6,13 +6,44 @@
     <script src="js/angular.js"></script>
     <script src="js/script.js"></script>
 </head>
-<body>
-<div ng-controller="myController">
+<body ng-controller="myController">
+<div >
     <div>
         Name: {{movie.name}}
         <img ng-src="{{movie.path}}" height="200" width="200" alt="{{movie.name + 'poster'}}"/>
     </div>
+    <label>
+        <input type="text" ng-model="message"/>
+    </label>
+
+    <br>
+    {{message}}
 </div>
-<div></div>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Hobby</th>
+        <th>Age</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="friend in friends">
+        <td>{{friend.name}}</td>
+        <td>{{friend.hobby}}</td>
+        <td>{{friend.age}}</td>
+    </tr>
+    </tbody>
+</table>
+<ul>
+    <li ng-repeat="country in countries">
+        {{country.name}} - Index = {{$index}}
+        <ul>
+            <li ng-repeat="city in country.cities">
+                {{city.name}} -Parent Index = {{$parent.$index}} - Index = {{$index}}
+            </li>
+        </ul>
+    </li>
+</ul>
 </body>
 </html>
