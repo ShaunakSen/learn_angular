@@ -7,7 +7,7 @@
     <script src="js/script.js"></script>
 </head>
 <body ng-controller="myController">
-<div >
+<div>
     <div>
         Name: {{movie.name}}
         <img ng-src="{{movie.path}}" height="200" width="200" alt="{{movie.name + 'poster'}}"/>
@@ -45,5 +45,30 @@
         </ul>
     </li>
 </ul>
+
+<!-- Starting with event handling -->
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Likes</th>
+        <th>Dislikes</th>
+        <th>Like/Dislike</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="technology in technologies">
+        <td>{{technology.name}}</td>
+        <td>{{technology.likes}}</td>
+        <td>{{technology.dislikes}}</td>
+        <td>
+            <input type="button" value="Like" ng-click="increaseLikes(technology)"/>
+            <input type="button" value="Dislike" ng-click="increaseDislikes(technology)"/>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+
 </body>
 </html>

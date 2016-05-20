@@ -26,49 +26,46 @@ myApp.controller("myController", function ($scope) {
     ];
 
     $scope.countries = [
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         {
-            name:"UK",
-            cities:[
-                {name:"London"},
-                {name:"Manchester"},
-                {name:"Birmingham"}
+            name: "UK",
+            cities: [
+                {name: "London"},
+                {name: "Manchester"},
+                {name: "Birmingham"}
             ]
         },
         {
-            name:"USA",
-            cities:[
-                {name:"Los Angeles"},
-                {name:"Chicago"},
-                {name:"New York"}
+            name: "USA",
+            cities: [
+                {name: "Los Angeles"},
+                {name: "Chicago"},
+                {name: "New York"}
             ]
         },
         {
-            name:"India",
-            cities:[
-                {name:"Delhi"},
-                {name:"Kolkata"},
-                {name:"Jhansi"}
+            name: "India",
+            cities: [
+                {name: "Delhi"},
+                {name: "Kolkata"},
+                {name: "Jhansi"}
             ]
         }
     ];
+
+    $scope.technologies = [
+        {name:'angular', likes:0, dislikes:0},
+        {name:'meteor', likes:0, dislikes:0},
+        {name:'laravel', likes:0, dislikes:0},
+        {name:'node', likes:0, dislikes:0},
+        {name:'react', likes:0, dislikes:0},
+        {name:'mongo', likes:0, dislikes:0}
+    ];
+
+    $scope.increaseLikes = function(technology){
+        technology.likes++;
+    };
+    $scope.increaseDislikes = function(technology){
+        technology.dislikes++;
+    };
 
 });
