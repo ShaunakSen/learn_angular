@@ -3,6 +3,9 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="../project1/css/bootstrap.min.css"/>
+    <script src="../project1/js/jquery.min.js"></script>
+    <script src="../project1/js/bootstrap.min.js"></script>
     <script src="js/angular.js"></script>
     <script src="js/script.js"></script>
 </head>
@@ -19,7 +22,7 @@
     <br>
     {{message}}
 </div>
-<table>
+<table class="table">
     <thead>
     <tr>
         <th>Name</th>
@@ -47,7 +50,7 @@
 </ul>
 
 <!-- Starting with event handling -->
-<table>
+<table class="table">
     <thead>
     <tr>
         <th>Name</th>
@@ -68,7 +71,29 @@
     </tr>
     </tbody>
 </table>
-
+<!-- START OF FILTER CODE -->
+Rows to display: <input type="number" step="1" min="0" max="4" ng-model="rowLimit"/>
+<br>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>Age</th>
+        <th>Salary (number)</th>
+        <th>Salary (currency)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="friend in friends | limitTo: rowLimit">
+        <td>{{friend.name | uppercase}}</td>
+        <td>{{friend.dateOfBirth | date: "dd/MM/yyyy" }}</td>
+        <td>{{friend.age}}</td>
+        <td>{{friend.salary | number:2}}</td>
+        <td>{{friend.salary | currency:"$":1}}</td>
+    </tr>
+    </tbody>
+</table>
 
 </body>
 </html>

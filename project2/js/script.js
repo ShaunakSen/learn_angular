@@ -11,19 +11,33 @@ myApp.controller("myController", function ($scope) {
         {
             name: "mini",
             hobby: "clothes",
-            age: 20
+            age: 20,
+            dateOfBirth: new Date("November 16, 1994"),
+            salary: 2000000.777
         },
         {
             name: "paddy",
             hobby: "food",
-            age: 22
+            age: 22,
+            dateOfBirth: new Date("November 26, 1994"),
+            salary: 190000.777
         },
         {
             name: "saurav",
             hobby: "cricket",
-            age: 22
+            age: 22,
+            dateOfBirth: new Date("February 16, 1994"),
+            salary: 1800000.777
+        },
+        {
+            name: "suarj",
+            hobby: "roaming",
+            age: 20,
+            dateOfBirth: new Date("March 8, 1994"),
+            salary: 1700000.777
         }
     ];
+    $scope.rowLimit = 2;
 
     $scope.countries = [
         {
@@ -67,5 +81,6 @@ myApp.controller("myController", function ($scope) {
     $scope.increaseDislikes = function(technology){
         technology.dislikes++;
     };
+
 
 });

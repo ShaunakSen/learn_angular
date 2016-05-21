@@ -51,3 +51,13 @@ ________________________________________________________________________________
      Delhi          index = 2 parentIndex=0
      Kolkata        index = 2 parentIndex=1
      Jhansi         index = 2 parentIndex=2
+
+
+
+ FILTERS in Angular
+
+ They can do 3 things:format, sort and filter data
+  {{expression | filterName:parameter}}
+  Format: lowercase, uppercase, number, currency, date
+  limitTo filter: limits the no of rows or chars in a string
+  {{expression | limitTo: limit : begin(optional)}}
