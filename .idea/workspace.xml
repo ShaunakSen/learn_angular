@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b713b89-e73b-4906-a827-b128660ae94c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project2/index2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project2/js/script2.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/udemy_angular.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/directives/searchresult.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index3_second.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/angular-messages.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/angular-resource.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/angular-route.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/app2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/app3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/app4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/app5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/mini.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/shona.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1" afterPath="$PROJECT_DIR$/project1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project2/readme.txt" afterPath="$PROJECT_DIR$/project2/readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="learn_angular.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -503,12 +478,19 @@
       <workItem from="1463763639005" duration="6863000" />
       <workItem from="1463809351998" duration="8076000" />
       <workItem from="1463843406355" duration="1243000" />
-      <workItem from="1463852977963" duration="2350000" />
+      <workItem from="1463852977963" duration="2425000" />
     </task>
+    <task id="LOCAL-00001" summary="added filter app">
+      <created>1463855376016</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1463855376016</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19456000" />
+    <option name="totallyTimeSpent" value="19531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="29" width="1366" height="739" extended-state="6" />
@@ -516,11 +498,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -574,6 +557,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added filter app" />
+    <option name="LAST_COMMIT_MESSAGE" value="added filter app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
