@@ -67,3 +67,8 @@ ________________________________________________________________________________
   eg: <tr ng-repeat="friend in friends | limitTo: rowLimit | orderBy: 'name' : true">
   OR
       <tr ng-repeat="friend in friends | limitTo: rowLimit | orderBy: '-name' ">
+
+
+  For searching in angular.. Search across all properties is easy
+  Search across single property is also easy
+  We want to search across say 2 properties. Then we need to write custom function
