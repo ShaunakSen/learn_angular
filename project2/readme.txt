@@ -61,3 +61,9 @@ ________________________________________________________________________________
   Format: lowercase, uppercase, number, currency, date
   limitTo filter: limits the no of rows or chars in a string
   {{expression | limitTo: limit : begin(optional)}}
+
+  orderBy Filter : To Sort data
+  {{orderBy_expr | orderBy: expression : reverse(optional)}}
+  eg: <tr ng-repeat="friend in friends | limitTo: rowLimit | orderBy: 'name' : true">
+  OR
+      <tr ng-repeat="friend in friends | limitTo: rowLimit | orderBy: '-name' ">

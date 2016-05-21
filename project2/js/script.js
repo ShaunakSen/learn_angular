@@ -20,7 +20,7 @@ myApp.controller("myController", function ($scope) {
             hobby: "food",
             age: 22,
             dateOfBirth: new Date("November 26, 1994"),
-            salary: 190000.777
+            salary: 1900000.777
         },
         {
             name: "saurav",
@@ -38,6 +38,18 @@ myApp.controller("myController", function ($scope) {
         }
     ];
     $scope.rowLimit = 2;
+    $scope.sortColumn = "name";
+    $scope.reverseSort = false;
+    $scope.sortData = function(column){
+        $scope.reverseSort = ($scope.sortColumn == column) ? !$scope.reverseSort : false;
+        $scope.sortColumn = column;
+    };
+    $scope.getSortClass = function(column){
+        if($scope.sortColumn == column){
+            return $scope.reverseSort ? 'arrow-down' : 'arrow-up';
+        }
+        return '';
+    };
 
     $scope.countries = [
         {

@@ -8,6 +8,24 @@
     <script src="../project1/js/bootstrap.min.js"></script>
     <script src="js/angular.js"></script>
     <script src="js/script.js"></script>
+    <style>
+        .arrow-up{
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 10px solid black;
+            display: inline-block;
+        }
+        .arrow-down{
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 10px solid black;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body ng-controller="myController">
 <div>
@@ -73,19 +91,30 @@
 </table>
 <!-- START OF FILTER CODE -->
 Rows to display: <input type="number" step="1" min="0" max="4" ng-model="rowLimit"/>
+Order By:
+<select ng-model="sortColumn">
+    <option value="name">Name ASC</option>
+    <option value="age">Age ASC</option>
+    <option value="dateOfBirth">DOB ASC</option>
+    <option value="salary">Salary DESC</option>
+    <option value="-name">Name DESC</option>
+    <option value="-age">Age DESC</option>
+    <option value="-dateOfBirth">DOB DESC</option>
+    <option value="-salary">Salary DESC</option>
+</select>
 <br>
 <table class="table table-striped">
     <thead>
     <tr>
-        <th>Name</th>
-        <th>Date of Birth</th>
-        <th>Age</th>
-        <th>Salary (number)</th>
-        <th>Salary (currency)</th>
+        <th ng-click="sortData('name')">Name <div ng-class="getSortClass('name')"></div></th>
+        <th ng-click="sortData('dateOfBirth')">Date of Birth <div ng-class="getSortClass('dateOfBirth')"></div></th>
+        <th ng-click="sortData('age')">Age <div ng-class="getSortClass('age')"></div></th>
+        <th ng-click="sortData('salary')">Salary (number) <div ng-class="getSortClass('salary')"></div></th>
+        <th ng-click="sortData('dateOfBirth')">Salary (currency)</th>
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="friend in friends | limitTo: rowLimit">
+    <tr ng-repeat="friend in friends | limitTo: rowLimit | orderBy: sortColumn : reverseSort">
         <td>{{friend.name | uppercase}}</td>
         <td>{{friend.dateOfBirth | date: "dd/MM/yyyy" }}</td>
         <td>{{friend.age}}</td>
