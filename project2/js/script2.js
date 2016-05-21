@@ -1,4 +1,15 @@
 var myApp = angular.module("myModule", []);
+
+myApp.filter('restriction', function () {
+    return function (gender) {
+        if (gender < 22) {
+            return 'not allowed';
+        }
+        else
+            return 'allowed';
+    }
+});
+
 myApp.controller("myController", function ($scope) {
     $scope.friends = [
         {
@@ -31,14 +42,13 @@ myApp.controller("myController", function ($scope) {
         }
     ];
 
-    $scope.search = function(item){
-        if($scope.searchText2 == undefined){
+    $scope.search = function (item) {
+        if ($scope.searchText2 == undefined) {
             return true;
         }
-        else
-        {
-            if((item.name.toLowerCase().indexOf($scope. searchText2.toLowerCase()) != -1) ||
-                (item.hobby.toLowerCase().indexOf($scope. searchText2.toLowerCase()) != -1)){
+        else {
+            if ((item.name.toLowerCase().indexOf($scope.searchText2.toLowerCase()) != -1) ||
+                (item.hobby.toLowerCase().indexOf($scope.searchText2.toLowerCase()) != -1)) {
                 return true;
             }
         }

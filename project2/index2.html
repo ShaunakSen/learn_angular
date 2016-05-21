@@ -52,6 +52,13 @@ Search : <input type="text" placeholder="SEARCH HOBBY & NAME" ng-model="searchTe
         <td>{{friend.age}}</td>
         <td>{{friend.salary}}</td>
     </tr>
+    <tr><td>After Applying Custom Filter to Age</td></tr>
+    <tr ng-repeat="friend in friends | filter:search ">
+        <td>{{friend.name}}</td>
+        <td>{{friend.hobby}}</td>
+        <td>{{friend.age | restriction}}</td>
+        <td>{{friend.salary}}</td>
+    </tr>
     </tbody>
 </table>
 
