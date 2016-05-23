@@ -72,3 +72,32 @@ ________________________________________________________________________________
   For searching in angular.. Search across all properties is easy
   Search across single property is also easy
   We want to search across say 2 properties. Then we need to write custom function
+
+
+  ng-init
+  --allows us to evaluate an expr in the current scope. But u should use controller to initialize values
+   on the scope
+   ng-init should only be used for aliasing special properties in ng-repeat directive
+
+   ng-include
+   --used to embed an HTML page in another HTML page, when we want to reuse a specific view in multiple pages
+
+
+  SERVICES
+
+  http service
+  --used to make http requests to a remote server
+  http service returns a promise objects. This means that it is executed asynchronously and data returned
+  by it may not be available immediately. so:
+  $scope.mini = $http.get(url) // this is not possible
+  so we use then method
+
+  $http.get('http://localhost/series/webservice/webservice.php')
+          .then(function(response){
+              $scope.friends = response.data;
+              console.log($scope.friends);
+          });
+
+  What exactly does this response object contain?
+    Object {data: Array[4], status: 200, config: Object, statusText: "OK"}
+

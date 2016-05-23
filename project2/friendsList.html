@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
+<ul class="list-group" ng-repeat="friend in friends">
+    <li class="list-group-item">{{friend.name}}
+        <ul class="list-group">
+            <li class="list-group-item">{{friend.age}}</li>
+            <li class="list-group-item">{{friend.salary}}</li>
+        </ul>
+    </li>
+</ul>

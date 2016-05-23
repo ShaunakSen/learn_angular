@@ -53,5 +53,7 @@ myApp.controller("myController", function ($scope) {
             }
         }
         return false;
-    }
+    };
+    $scope.hideSalary = false;
+
 });

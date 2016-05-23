@@ -62,6 +62,31 @@ Search : <input type="text" placeholder="SEARCH HOBBY & NAME" ng-model="searchTe
     </tbody>
 </table>
 
+<h2>Simple Application of ng-show and ng-hide</h2>
+
+<input type="checkbox" ng-model="hideSalary"/> Hide Salary
+<br/><br/>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Hobby</th>
+        <th>Age</th>
+        <th ng-hide="hideSalary">Salary</th>
+        <th ng-show="hideSalary">Salary</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="friend in friends">
+        <td>{{friend.name}}</td>
+        <td>{{friend.hobby}}</td>
+        <td>{{friend.age}}</td>
+        <td ng-hide="hideSalary">{{friend.salary}}</td>
+        <td ng-show="hideSalary">#####</td>
+        <!-- initially hideSalary is not available in scope so is undefined so false. when we check it becomes true -->
+    </tr>
+    </tbody>
+</table>
 
 </body>
 </html>
