@@ -106,3 +106,11 @@ ________________________________________________________________________________
   Also if we want to reuse the logic within any other controller we would have to duplicate the code within that
   controller. So use services
   Service is built using app.factory() method. The function inside the method returns a javaScript object
+
+
+  $location Service
+  --$location.hash(scrollLocation);
+    it appends #scrollLocation to the URL
+
+  $anchorScroll
+  -- it reads that hashed fragment and automatically scrolls to that element
