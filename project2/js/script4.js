@@ -1,7 +1,7 @@
 var myApp = angular.module("myModule", []);
 
 
-myApp.controller("myController", function ($scope, $http, $log) {
+myApp.controller("myController", function ($scope, $http, $log, stringService) {
 
     var successCallback = function (response) {
         $scope.friends = response.data;
@@ -12,4 +12,12 @@ myApp.controller("myController", function ($scope, $http, $log) {
 
     $http.get('http://localhost/series/webservice/webservice.php')
         .then(successCallback, errorCallback);
+
+
+    $scope.transformString = function (input) {
+
+        $scope.output = stringService.processString(input);
+    }
+
+
 });

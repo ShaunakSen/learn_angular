@@ -101,3 +101,8 @@ ________________________________________________________________________________
   What exactly does this response object contain?
     Object {data: Array[4], status: 200, config: Object, statusText: "OK"}
 
+
+  When all the code is within the controller function it can become slightly complex
+  Also if we want to reuse the logic within any other controller we would have to duplicate the code within that
+  controller. So use services
+  Service is built using app.factory() method. The function inside the method returns a javaScript object
