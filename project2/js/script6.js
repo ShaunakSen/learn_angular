@@ -16,6 +16,14 @@ myApp.config(function ($routeProvider, $locationProvider) {
             templateUrl: "templates/students.html",
             controller: "studentsController"
         })
+        .when(
+        "/students/:id", {
+            templateUrl: "templates/studentDetails.html",
+            controller: "studentDetailsController"
+        })
+        .otherwise({
+            redirectTo: "/home"
+        });
     $locationProvider.html5Mode(true);
 });
 
@@ -30,8 +38,21 @@ myApp.controller("coursesController", function ($scope) {
 
 myApp.controller("studentsController", function ($scope, $http) {
     $http.get("http://localhost/series/webservice/webservice.php")
-        .then(function(response){
+        .then(function (response) {
             $scope.students = response.data;
+            console.log($scope.students);
         });
+});
+
+myApp.controller("studentDetailsController", function ($scope, $http, $routeParams) {
+    $http({
+        url: "http://localhost/series/webservice/webservice.php",
+        params: {id: $routeParams.id},
+        method: "get"
+    })
+        .then(function (response) {
+            $scope.student = response.data;
+            console.log($scope.student);
+        })
 });
 

@@ -208,6 +208,56 @@ ________________________________________________________________________________
   3.<base href="/learn_angular/project2/" />
 
 
+  Adding few more Functionalities
+  we want each student in the list to be links.
+  when we click on them it should display info about that student
+  We do this by using id of student
+  1st change view
+  <h2>Our Students</h2>
+  <ul class="list-group">
+      <li ng-repeat="student in students" class="list-group-item list-group-item-success">
+          <a href="students/{{student.id}}">{{student.name}}</a>
+      </li>
+  </ul>
+
+  Now add route
+  .when(
+          "/students/:id", {
+              templateUrl: "templates/studentDetails.html",
+              controller: "studentDetailsController"
+          })
+
+  Create the partial template studentDetails.html
+
+  Creating controller:
+
+  myApp.controller("studentDetailsController", function ($scope, $http, $routeParams) {
+      $http({
+          url: "http://localhost/series/webservice/webservice.php",
+          params: {id: $routeParams.id},
+          method: "get"
+      })
+          .then(function (response) {
+              $scope.student = response.data;
+              console.log($scope.student);
+          })
+  });
+
+
+  Creating View:
+
+  <div class="panel panel-info">
+      <div class="panel-body">
+          <p>Id : {{student[0].id}}</p>
+          <p>Name: {{student[0].name}}</p>
+          <p>city: {{student[0].city}}</p>
+          <p>hobby: {{student[0].hobby}}</p>
+      </div>
+
+  </div>
+  <a href="students">Back to students list</a>
+
+
 
 
 
