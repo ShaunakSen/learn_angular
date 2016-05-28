@@ -258,6 +258,46 @@ ________________________________________________________________________________
   <a href="students">Back to students list</a>
 
 
+  CONTROLLER AS Syntax
+  So far we have used $scope to display stuff in view. There is another way: CONTROLLER AS Syntax
+  Using CONTROLLER AS Syntax there is no need to inject $scope object in controller function
+
+  Controller with $scope
+
+  app.controller("mainController", function($scope)){
+  $scope.message = "Mini";
+  }
+  <div ng-controller="mainController">{{message}}</div>
+
+  Controller AS Syntax
+
+    app.controller("mainController", function()){
+    this.message = "Mini";
+    }
+    <div ng-controller="mainController as main">{{main.message}}</div>
+
+
+  Basically we create an instance of the controller and attach properties to it
+
+  When we have code like:
+
+  myApp.controller("studentsController", function ($http) {
+
+      $http.get("http://localhost/series/webservice/webservice.php")
+          .then(function (response) {
+              this.students = response.data;
+          });
+  });
+
+  In then() this points to window object. To solve this :
+
+  myApp.controller("studentsController", function ($http) {
+      var vm = this;
+      $http.get("http://localhost/series/webservice/webservice.php")
+          .then(function (response) {
+              vm.students = response.data;
+              });
+  });
 
 
 

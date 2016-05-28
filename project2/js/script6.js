@@ -1,58 +1,61 @@
 var myApp = angular.module("myModule", ["ngRoute"]);
 myApp.config(function ($routeProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
     $routeProvider
         .when(
         "/home", {
             templateUrl: "templates/home.html",
-            controller: "homeController"
+            controller: "homeController as homeCtrl"
         })
         .when(
         "/courses", {
             templateUrl: "templates/courses.html",
-            controller: "coursesController"
+            controller: "coursesController as coursesCtrl"
         })
         .when(
         "/students", {
             templateUrl: "templates/students.html",
-            controller: "studentsController"
+            controller: "studentsController as studentsCtrl"
         })
         .when(
         "/students/:id", {
             templateUrl: "templates/studentDetails.html",
-            controller: "studentDetailsController"
+            controller: "studentDetailsController as studentDetailsCtrl"
         })
         .otherwise({
             redirectTo: "/home"
         });
-    $locationProvider.html5Mode(true);
+
 });
 
 
-myApp.controller("homeController", function ($scope) {
-    $scope.message = "Home Page"
+myApp.controller("homeController", function () {
+    this.message = "Home Page"
 });
 
-myApp.controller("coursesController", function ($scope) {
-    $scope.courses = ["Meteor", "React & Redux", "Angular", "Django", "Laravel"];
+myApp.controller("coursesController", function () {
+    this.courses = ["Meteor", "React & Redux", "Angular", "Django", "Laravel"];
 });
 
-myApp.controller("studentsController", function ($scope, $http) {
+myApp.controller("studentsController", function ($http) {
+    var vm = this;
     $http.get("http://localhost/series/webservice/webservice.php")
         .then(function (response) {
-            $scope.students = response.data;
-            console.log($scope.students);
+            vm.students = response.data;
+            console.log(vm.students);
         });
 });
 
-myApp.controller("studentDetailsController", function ($scope, $http, $routeParams) {
+myApp.controller("studentDetailsController", function ( $http, $routeParams) {
+    var vm = this;
     $http({
         url: "http://localhost/series/webservice/webservice.php",
         params: {id: $routeParams.id},
         method: "get"
     })
         .then(function (response) {
-            $scope.student = response.data;
-            console.log($scope.student);
+            vm.student = response.data;
+            console.log(vm.student);
         })
 });
 
