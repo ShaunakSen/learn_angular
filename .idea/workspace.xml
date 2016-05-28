@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b713b89-e73b-4906-a827-b128660ae94c" name="Default" comment="added filter app">
+    <list default="true" id="8b713b89-e73b-4906-a827-b128660ae94c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1" afterPath="$PROJECT_DIR$/project1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project2/templates/courses.html" afterPath="$PROJECT_DIR$/project2/templates/courses.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project2/index6.html" afterPath="$PROJECT_DIR$/project2/index6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project2/js/script6.js" afterPath="$PROJECT_DIR$/project2/js/script6.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project2/templates/students.html" afterPath="$PROJECT_DIR$/project2/templates/students.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="learn_angular.iws" />
@@ -587,7 +583,7 @@
       <workItem from="1464116203960" duration="812000" />
       <workItem from="1464151519717" duration="74000" />
       <workItem from="1464368914072" duration="2134000" />
-      <workItem from="1464421529084" duration="3526000" />
+      <workItem from="1464421529084" duration="3540000" />
     </task>
     <task id="LOCAL-00001" summary="added filter app">
       <created>1463855376016</created>
@@ -595,11 +591,17 @@
       <option name="project" value="LOCAL" />
       <updated>1463855376016</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added filter app">
+      <created>1464425396725</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1464425396725</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47408000" />
+    <option name="totallyTimeSpent" value="47422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="40" width="1368" height="729" extended-state="6" />
