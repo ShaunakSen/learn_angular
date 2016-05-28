@@ -114,3 +114,43 @@ ________________________________________________________________________________
 
   $anchorScroll
   -- it reads that hashed fragment and automatically scrolls to that element
+
+
+  Building an SPA
+
+  --this app will have clean urls
+  index.html is the layout view. It contains header, footer and main content area. Depending on url
+  that user requests, views will be injected into layout view
+  for eg if someone goes to base_url/student, then student.html will be injected into layouts view
+
+  In index.html
+      <li><a href="#/home">Home</a></li>
+      <li><a href="#/courses">Courses</a></li>
+      <li><a href="#/students">Students</a></li>
+  In body
+  <ng-view></ng-view>
+
+  Now we want to create partial templates
+  templates
+  -> home.html
+  -> courses.html
+  -> students.html
+
+  Now in home.html we want to have a controller homeController which will be responsible for home view
+  So <h2>{{message}}</h2> This is where the title of the page would go
+
+  Similarly for courses
+  <h2>Courses We Offer</h2>
+  <ul>
+      <li ng-repeat="course in courses"></li>
+  </ul>
+  This courses property will be set be courseController
+
+  For students, i want the list of students to come from a database table using a webservice
+  <h2>Our students</h2>
+  <ul>
+      <li ng-repeat="student in students">
+          {{student.name}}
+      </li>
+  </ul>
+
