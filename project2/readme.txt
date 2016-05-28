@@ -128,7 +128,9 @@ ________________________________________________________________________________
       <li><a href="#/courses">Courses</a></li>
       <li><a href="#/students">Students</a></li>
   In body
-  <ng-view></ng-view>
+  <ng-view>
+  // This is where the views will be injected
+  </ng-view>
 
   Now we want to create partial templates
   templates
@@ -153,4 +155,62 @@ ________________________________________________________________________________
           {{student.name}}
       </li>
   </ul>
+
+  Now configure routes:
+  myApp.config(function ($routeProvider) {
+      $routeProvider
+          .when(
+          "/home", {
+              templateUrl: "templates/home.html",
+              controller: "homeController"
+          })
+          .when(
+          "/courses", {
+              templateUrl: "templates/courses.html",
+              controller: "coursesController"
+          })
+          .when(
+          "/students", {
+              templateUrl: "templates/students.html",
+              controller: "studentsController"
+          })
+  });
+
+  Coding the controllers:
+
+  myApp.controller("homeController", function ($scope) {
+      $scope.message = "Home Page"
+  });
+
+  myApp.controller("coursesController", function ($scope) {
+      $scope.courses = ["Meteor", "React & Redux", "Angular", "Django", "Laravel"];
+  });
+
+  myApp.controller("studentsController", function ($scope, $http) {
+      $http.get("http://localhost/series/webservice/webservice.php")
+          .then(function(response){
+              $scope.students = response.data;
+          });
+  });
+
+  But this is how our routes look like now:
+  http://localhost:63342/learn_angular/project2/index6.html#/home
+
+  How to remove the '#'
+
+  There are 3 steps:
+  1. Enable html5mode routing
+  Inject $locationProvider to config and do:
+  $locationProvider.html5Mode(true);
+
+  2. Remove #/ from all links
+
+  3.<base href="/learn_angular/project2/" />
+
+
+
+
+
+
+
 
