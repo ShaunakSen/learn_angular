@@ -1,6 +1,7 @@
 var myApp = angular.module("myModule", ["ngRoute"]);
 myApp.config(function ($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
+    $routeProvider.caseInsensitiveMatch = true;
     $routeProvider
         .when(
         "/home", {
@@ -37,8 +38,11 @@ myApp.controller("coursesController", function () {
     this.courses = ["Meteor", "React & Redux", "Angular", "Django", "Laravel"];
 });
 
-myApp.controller("studentsController", function ($http) {
+myApp.controller("studentsController", function ($http, $route) {
     var vm = this;
+    vm.reloadData = function(){
+        $route.reload()
+    };
     $http.get("http://localhost/series/webservice/webservice.php")
         .then(function (response) {
             vm.students = response.data;
@@ -46,7 +50,7 @@ myApp.controller("studentsController", function ($http) {
         });
 });
 
-myApp.controller("studentDetailsController", function ( $http, $routeParams) {
+myApp.controller("studentDetailsController", function ($http, $routeParams) {
     var vm = this;
     $http({
         url: "http://localhost/series/webservice/webservice.php",

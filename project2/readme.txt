@@ -299,7 +299,129 @@ ________________________________________________________________________________
               });
   });
 
+  Nested Scopes and Controller AS Syntax
 
+  Say we have:
+
+  myApp.controller('cityController', function($scope){
+      $scope.name = "Kolkata";
+  });
+  myApp.controller('stateController', function($scope){
+      $scope.name = "West Bengal";
+  });
+  myApp.controller('countryController', function($scope){
+      $scope.name = "India";
+  });
+
+  we want to display:
+  India
+  West Bengal
+  Kolkata
+
+  HTML:
+
+  <div ng-controller="countryController">
+      {{name}}
+      <div ng-controller="stateController">
+          {{name}}
+          <div ng-controller="cityController">
+              {{name}}
+          </div>
+      </div>
+  </div>
+
+
+  Now suppose we want to display:
+  India
+  India - West Bengal
+  India - West Bengal - Kolkata
+
+  <div ng-controller="countryController">
+      {{name}}
+      <div ng-controller="stateController">
+          {{$parent.name}} - {{name}}
+          <div ng-controller="cityController">
+              {{$parent.$parent.name}} - {{$parent.name}} - {{name}}
+          </div>
+      </div>
+  </div>
+
+  This is quite confusing. Imagine how complex it would be with deeper levels of nesting
+
+  Using Controller AS Syntax:
+
+  myApp.controller('cityController', function(){
+      this.name = "Kolkata";
+  });
+  myApp.controller('stateController', function(){
+      this.name = "West Bengal";
+  });
+  myApp.controller('countryController', function(){
+      this.name = "India";
+  });
+
+
+  HTML:
+
+  <div ng-controller="countryController as countryCtrl">
+      {{countryCtrl.name}}
+      <div ng-controller="stateController as stateCtrl">
+          {{countryCtrl.name}} - {{stateCtrl.name}}
+          <div ng-controller="cityController as cityCtrl">
+              {{countryCtrl.name}} - {{stateCtrl.name}} - {{cityCtrl.name}}
+          </div>
+      </div>
+  </div>
+
+  This is much cleaner!!
+
+  But does this mean $scope is not used at all? No
+  Angular uses $scope behind the scenes
+  for eg: <div ng-controller="cityController as cityCtrl">
+  This cityCtrl is attached to $scope object
+
+
+  To make routes case insensitive add:
+
+  caseInsensitiveMatch: true to the particular route
+
+  If u want this for all routes :
+  $routeProvider.caseInsensitiveMatch: true
+
+  Inline Templates:
+  .when(
+          "/home", {
+              templateUrl: "templates/home.html",
+              controller: "homeController as homeCtrl"
+          })
+
+  View content coming from separate HTML file. It can be inline as well
+
+  .when(
+            "/home", {
+                template: "<h2>Hiii Mini</h2>",
+                controller: "homeController as homeCtrl"
+            })
+
+
+
+  Route Reload:
+
+  Now in our SPA we had a list of students
+  we add a student to database. on clicking student this does not get updated. Only on
+  reloading does this get updated
+  But on reloading obviously every single thing will have to be fetched from server, Instead of just reloading
+  resources for that particular route
+
+  Create a new function in studentsController called reloadData
+  vm.reloadData = function(){
+          $route.reload()
+      };
+
+  In View students.html:
+  <button class="btn btn-primary" ng-click="studentsCtrl.reloadData()">Refresh</button>
+
+  It will just reload the route not everything else
 
 
 

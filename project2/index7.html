@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <base href="/learn_angular/project2/"/>
+    <link rel="stylesheet" href="../project1/css/bootstrap.min.css"/>
+    <script src="../project1/js/jquery.min.js"></script>
+    <script src="../project1/js/bootstrap.min.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/script7.js"></script>
+
+</head>
+<body>
+<div ng-controller="countryController as countryCtrl">
+    {{countryCtrl.name}}
+    <div ng-controller="stateController as stateCtrl">
+        {{countryCtrl.name}} - {{stateCtrl.name}}
+        <div ng-controller="cityController as cityCtrl">
+            {{countryCtrl.name}} - {{stateCtrl.name}} - {{cityCtrl.name}}
+        </div>
+    </div>
+</div>
+</body>
+</html>
