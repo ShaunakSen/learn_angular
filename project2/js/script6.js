@@ -38,8 +38,16 @@ myApp.controller("coursesController", function () {
     this.courses = ["Meteor", "React & Redux", "Angular", "Django", "Laravel"];
 });
 
-myApp.controller("studentsController", function ($http, $route) {
+myApp.controller("studentsController", function ($scope, $http, $route) {
     var vm = this;
+
+    $scope.$on('$locationChangeStart',function(event, next, current){
+        if(!confirm("Are you sure you want to navigate away to " + next)){
+            console.log(next);
+            event.preventDefault();
+        }
+    });
+
     vm.reloadData = function(){
         $route.reload()
     };

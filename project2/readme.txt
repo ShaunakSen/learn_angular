@@ -424,5 +424,48 @@ ________________________________________________________________________________
   It will just reload the route not everything else
 
 
+  Diff b/w $scope and $rootScope:
+
+  $rootScope is is available globally for all controllers. $scope is available only to controller
+  which has created it and its children
+
+
+  Cancel Route Change:
+  In view where we display name of students we want to add a confirmation alert when user wants to navigate away.
+  This is particularly useful in case of long forms and u have filled out 90% of the form when u accidentally click
+  on another link
+
+  $scope.$on('$routeChangeStart',function(event, next, current){
+          if(!confirm("Are you sure you want to navigate away")){
+              event.preventDefault();
+          }
+      });
+
+      next contains info about next route we are navigating to
+      next contains info about current route we are on
+
+      If i want to know which route user is navigating to, i have to make use of next
+
+      console.log(next) to see the properties associated with it
+      next.$$route.originalPath
+
+      Similarly we can use $locationChangeStart event. This is exactly same but next property and current r diff
+
+      $scope.$on('$locationChangeStart',function(event, next, current){
+              if(!confirm("Are you sure you want to navigate away to " + next)){
+                  console.log(next);
+                  event.preventDefault();
+              }
+
+
+
+      Route Change Events:
+
+      1.$locationChangeStart
+      2.$routeChangeStart
+      3.$locationChangeSuccess
+      4.$routeChangeSuccess
+
+
 
 
