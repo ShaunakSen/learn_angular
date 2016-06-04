@@ -23,6 +23,11 @@ myApp.config(function ($routeProvider, $locationProvider) {
             templateUrl: "templates/studentDetails.html",
             controller: "studentDetailsController as studentDetailsCtrl"
         })
+        .when(
+        "/studentsSearch/:name?", {
+            templateUrl: "templates/studentsSearch.html",
+            controller: "studentsSearchController as studentsSearchCtrl"
+        })
         .otherwise({
             redirectTo: "/home"
         });
@@ -38,15 +43,17 @@ myApp.controller("coursesController", function () {
     this.courses = ["Meteor", "React & Redux", "Angular", "Django", "Laravel"];
 });
 
-myApp.controller("studentsController", function ($scope, $http, $route) {
+myApp.controller("studentsController", function ($scope, $http, $route, $location) {
     var vm = this;
 
-    $scope.$on('$locationChangeStart',function(event, next, current){
-        if(!confirm("Are you sure you want to navigate away to " + next)){
-            console.log(next);
-            event.preventDefault();
+    vm.searchStudent = function(){
+        if(vm.name){
+            $location.url("/studentsSearch/" + vm.name);
         }
-    });
+        else{
+            $location.url("/studentsSearch/");
+        }
+    };
 
     vm.reloadData = function(){
         $route.reload()
@@ -69,5 +76,33 @@ myApp.controller("studentDetailsController", function ($http, $routeParams) {
             vm.student = response.data;
             console.log(vm.student);
         })
+});
+
+myApp.controller("studentsSearchController", function ($http, $routeParams) {
+    var vm = this;
+
+    if($routeParams.name){
+        $http({
+            url: "http://localhost/series/webservice/webservice4.php",
+            params: {name: $routeParams.name},
+            method: "get"
+        })
+            .then(function (response) {
+                vm.students = response.data;
+                console.log(vm.student);
+            })
+    }
+    else{
+        $http({
+            url: "http://localhost/series/webservice/webservice4.php",
+            method: "get"
+        })
+            .then(function (response) {
+                vm.students = response.data;
+                console.log(vm.student);
+            })
+    }
+
+
 });
 

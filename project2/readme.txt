@@ -468,4 +468,95 @@ ________________________________________________________________________________
 
 
 
+      Now we want to have a search box above our student list
+      If i type the letters mi and hits search it should display to me info about mini
+
+      we create webservice4.php to return data from database(using LIKE SQL)
+
+      In studentsController we build a function called searchStudent
+      Also we inject a service called $location
+
+      Basically we want to check whether anyone has typed anything into input field and hit search
+      in view:
+
+      <div class="form-group">
+          <input type="text" class="form-control" ng-model="studentCtrl.name"/>
+          <button class="btn btn-default" ng-click="studentCtrl.searchStudent">Search</button>
+      </div>
+
+      In controller:
+      vm.searchStudents = function(){
+              if(vm.name){
+
+                //if user has typed anything
+                  $location.url("/studentsSearch/" + vm.name);
+              }
+              else{
+                  $location.url("/studentsSearch/");
+              }
+          };
+
+      For this studentsSearch we build a controller
+
+
+      myApp.controller("studentsSearchController", function ($http, $routeParams) {
+          var vm = this;
+
+          if($routeParams.name){
+              $http({
+                  url: "http://localhost/series/webservice/webservice4.php",
+                  params: {name: $routeParams.name},
+                  method: "get"
+              })
+                  .then(function (response) {
+                      vm.students = response.data;
+                      console.log(vm.student);
+                  })
+          }
+          else{
+              $http({
+                  url: "http://localhost/series/webservice/webservice4.php",
+                  method: "get"
+              })
+                  .then(function (response) {
+                      vm.students = response.data;
+                      console.log(vm.student);
+                  })
+          }
+
+
+      });
+
+      If name property is set we send in a name parameter to request. this is the case when user
+      types something into text field
+      If not we dont send params
+
+      Next we have to configure this route
+
+      .when(
+              "/studentsSearch/:name?", {
+                  templateUrl: "templates/studentsSearch.html",
+                  controller: "studentsSearchController as studentsSearchCtrl"
+              })
+
+      We want name param to be optional so we include ? after it
+
+
+      We have to build this view now
+
+      <ul class="list-group" ng-repeat="student in studentsSearchCtrl.students">
+          <li class="list-group-item">{{student.id}}</li>
+          <li class="list-group-item">{{student.name}}</li>
+          <li class="list-group-item">{{student.hobby}}</li>
+          <li class="list-group-item">{{student.city}}</li>
+      </ul>
+
+
+
+
+
+
+
+
+
 
