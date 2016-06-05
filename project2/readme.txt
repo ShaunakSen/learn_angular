@@ -611,10 +611,158 @@ Nothing will happen! route will not change
 
 
 
+UI ROUTER
 
 
+ui router is third party routing module
+It implements routing based on state of application
+ngRoute implemented routing based on route url
+
+3 steps to include ui router
+1.add CDN link
+2.add ui.router as module dependency
+3.add ui-view directive in layout page
 
 
+Now we will work in project3
 
+Instead of referencing ng-route we refer ui router cdn
+
+add ui.router as module dependency
+
+var myApp = angular.module("myModule", ["ui.router"]);
+
+In view:
+
+<div class="col-xs-12">
+    <ui-view></ui-view>
+</div>
+
+Configuring states
+
+A state is a place in the application.. analogous to route in ngRoute
+
+to configure a state use state method of $stateProvider service
+
+Currently we were using $routProvider service to configure routes
+this $routProvider came with ngRoute
+we can no longer use that
+We have to use $stateProvider service
+
+Modifying states:
+
+$stateProvider
+        .state('home', {
+            url: "/home",
+            templateUrl: "templates/home.html",
+            controller: "homeController",
+            controllerAs: "homeCtrl"
+        })
+
+'home' is name of state
+
+Similarly we do for all routes
+
+We comment out otherwise route and routes with params for now
+
+Next see in controller studentsController
+we have used $rote.reload..but $route is service of ngRoute
+Instead inject $state service and use $state.reload()
+
+next in index instead of <a href="">
+use <a ui-sref="name of the state">
+
+From ui-sref angular understands the state
+This state has properties like
+
+.state('home', {
+            url: "/home",
+            templateUrl: "templates/home.html",
+            controller: "homeController",
+            controllerAs: "homeCtrl"
+        })
+
+
+So it does all required stuff
+
+
+what if we remove url property?
+
+Then what will happen?
+Firstly the links wont be hyperlinks
+
+Then since templateUrl and all are specified when we click home, info in home template will be displayed
+controller will be loaded
+but url wont change
+
+Also RELOAD PROBLEM SOLVED in ui-router
+
+
+How to use url parameters with ui router?
+
+
+When we click on student  name it should display info of that student
+
+In view students.html we have:
+<a href="students/{{student.id}}">{{student.name}}</a>
+
+when we click on student name its id is passed
+
+But we dont have route configured for that
+
+Let us configure url params
+
+1. Define state with url param:
+
+.state("studentDetails", {
+            url:"/students/:id",
+            templateUrl: "templates/studentDetails.html",
+            controller: "studentDetailsController as studentDetailsCtrl"
+        });
+
+studentDetails is name of state
+
+2.
+In view students.html
+
+<a ui-sref="studentDetails({id:student.id})">{{student.name}}</a>
+
+here studentDetails is name of state and id is parameter
+
+
+3.
+controller for studentDetails state: studentDetailsController
+
+This is the controller:
+
+myApp.controller("studentDetailsController", function ($http, $routeParams) {
+ var vm = this;
+ $http({
+ url: "http://localhost/series/webservice/webservice.php",
+ params: {id: $routeParams.id},
+ method: "get"
+ })
+ .then(function (response) {
+ vm.student = response.data;
+ console.log(vm.student);
+ })
+ });
+
+ Here we are using $routeParams service.. we cant anymore
+
+ to read param values we need $stateParams service
+
+ myApp.controller("studentDetailsController", function ($http, $stateParams) {
+  var vm = this;
+  $http({
+  url: "http://localhost/series/webservice/webservice.php",
+  params: {id: $stateParams.id},
+  method: "get"
+  })
+  .then(function (response) {
+  vm.student = response.data;
+  console.log(vm.student);
+  })
+  });
 
 

@@ -1,0 +1,12 @@
+<h2>Our Students</h2>
+<div class="form-group">
+    <input type="text" class="form-control" ng-model="studentsCtrl.name"/>
+    <br/>
+    <button class="btn btn-default" ng-click="studentsCtrl.searchStudent()">Search</button>
+</div>
+<ul class="list-group">
+    <li ng-repeat="student in studentsCtrl.students" class="list-group-item list-group-item-success">
+        <a ui-sref="studentDetails({id:student.id})">{{student.name}}</a>
+    </li>
+</ul>
+<button class="btn btn-primary" ng-click="studentsCtrl.reloadData()">Refresh</button>

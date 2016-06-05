@@ -1,0 +1,11 @@
+body{
+    font-family: "Ubuntu", sans-serif;
+
+}
+.container{
+    text-align: justify;
+}
+p{
+    font-size: 1.2em;
+    line-height: 2em;
+}
