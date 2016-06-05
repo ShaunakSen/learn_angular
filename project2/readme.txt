@@ -553,6 +553,64 @@ ________________________________________________________________________________
 
 
 
+ROUTE RESOLVE
+
+result of http.get might take time. We want route not to change until
+result od $http.get is available
+
+
+suppose we dont want route to change when user goes to students view until the
+students are fetched from db
+We dont want to transition to new route until all promises are resolved
+
+
+.when(
+        "/students", {
+            templateUrl: "templates/students.html",
+            controller: "studentsController as studentsCtrl",
+            resolve: {
+                studentsList: function($http){
+                    return $http.get("http://localhost/series/webservice/webservice.php")
+                        .then(function (response) {
+                            return response.data;
+                        });
+                }
+            }
+        })
+
+
+Before we transition to a new route we will have students list in property studentsList
+This means we can now inject this property into students controller
+
+We dont need $http inside controller anymore
+
+myApp.controller("studentsController", function (studentsList, $scope, $route, $location) {
+    var vm = this;
+
+    vm.searchStudent = function(){
+        if(vm.name){
+            $location.url("/studentsSearch/" + vm.name);
+        }
+        else{
+            $location.url("/studentsSearch/");
+        }
+    };
+
+    vm.reloadData = function(){
+        $route.reload()
+    };
+    vm.students = studentsList;
+});
+
+How to test this?
+
+dont start ur php server
+
+try to go to students view
+Nothing will happen! route will not change
+
+
+
 
 
 
