@@ -29,39 +29,16 @@ myApp.config(function ($stateProvider) {
             }
         })
         .state("studentDetails", {
-            url:"/students/:id",
+            url: "/students/:id",
             templateUrl: "templates/studentDetails.html",
             controller: "studentDetailsController as studentDetailsCtrl"
+        })
+        .state("studentsSearch", {
+            url: "/studentsSearch/:name",
+            templateUrl: "templates/studentsSearch.html",
+            controller: "studentsSearchController as studentsSearchCtrl"
         });
-    /*.when(
-     "/studentsSearch/:name?", {
-     templateUrl: "templates/studentsSearch.html",
-     controller: "studentsSearchController as studentsSearchCtrl",
-     resolve: {
-     studentsSearched: function($http, $routeParams){
-     if($routeParams.name){
-     return $http({
-     url: "http://localhost/series/webservice/webservice4.php",
-     params: {name: $routeParams.name},
-     method: "get"
-     })
-     .then(function (response) {
-     return response.data;
-     })
-     }
-     else{
-     return $http({
-     url: "http://localhost/series/webservice/webservice4.php",
-     method: "get"
-     })
-     .then(function (response) {
-     return response.data;
-     })
-     }
-     }
-     }
-     })
-     .otherwise({
+    /*.otherwise({
      redirectTo: "/home"
      });*/
 
@@ -80,12 +57,7 @@ myApp.controller("studentsController", function (studentsList, $scope, $state, $
     var vm = this;
 
     vm.searchStudent = function () {
-        if (vm.name) {
-            $location.url("/studentsSearch/" + vm.name);
-        }
-        else {
-            $location.url("/studentsSearch/");
-        }
+        $state.go('studentsSearch', {name: vm.name});
     };
 
     vm.reloadData = function () {
@@ -95,25 +67,38 @@ myApp.controller("studentsController", function (studentsList, $scope, $state, $
 });
 
 myApp.controller("studentDetailsController", function ($http, $stateParams) {
- var vm = this;
- $http({
- url: "http://localhost/series/webservice/webservice.php",
- params: {id: $stateParams.id},
- method: "get"
- })
- .then(function (response) {
- vm.student = response.data;
- console.log(vm.student);
- })
- });
+    var vm = this;
+    $http({
+        url: "http://localhost/series/webservice/webservice.php",
+        params: {id: $stateParams.id},
+        method: "get"
+    })
+        .then(function (response) {
+            vm.student = response.data;
+            console.log(vm.student);
+        })
+});
 
 
-/*
- myApp.controller("studentsSearchController", function ($http, $routeParams, studentsSearched) {
- var vm = this;
+myApp.controller("studentsSearchController", function ($http, $stateParams) {
+    var vm = this;
+    if ($stateParams.name) {
+        //if user has typed something
+        $http({
+            url: "http://localhost/series/webservice/webservice4.php",
+            method: "get",
+            params: {name: $stateParams.name}
+        }).then(function (response) {
+            vm.students = response.data;
+        })
+    } else {
+        $http({
+            url: "http://localhost/series/webservice/webservice4.php",
+            method: "get"
+        }).then(function (response) {
+            vm.students = response.data;
+        })
+    }
 
- vm.students = studentsSearched;
-
-
- });*/
+});
 

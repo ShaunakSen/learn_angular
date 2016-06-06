@@ -765,4 +765,66 @@ myApp.controller("studentDetailsController", function ($http, $routeParams) {
   })
   });
 
+  Using optional parameters with ui router
+
+  with ngRoute to make a parameter optional we include ? at end of route
+
+  Here in ui router parameters are optional by default
+
+  We wanna implement the same search functionality as we had in project 2
+
+  if input text field is empty we dont wanna pass anything through url parameters and
+  in view we wanna display all student names
+
+  Configure url:
+
+
+  .state("studentsSearch",{
+              url: "/studentsSearch/:name",
+              templateUrl: "templates/studentsSearch.html",
+              controller: "studentsSearchController as studentsSearchCtrl"
+          });
+
+
+
+  Now look at our view... Where search button is present we have:
+
+  <input type="text" class="form-control" ng-model="studentsCtrl.name"/>
+  <br/>
+  <button class="btn btn-default" ng-click="studentsCtrl.searchStudent()">Search</button>
+
+  This searchStudent function is placed in studentsController
+
+  myApp.controller("studentsController", function (studentsList, $scope, $state, $location) {
+      var vm = this;
+
+      vm.searchStudent = function () {
+          if (vm.name) {
+              $location.url("/studentsSearch/" + vm.name);
+          }
+          else {
+              $location.url("/studentsSearch/");
+          }
+      };
+
+      vm.reloadData = function () {
+          $state.reload()
+      };
+      vm.students = studentsList;
+  });
+
+
+  We dont want to use location service.. We are already injecting $state service.. We want to use that
+
+  We modify searchStudent function as:
+  vm.searchStudent = function () {
+          $state.go('studentsSearch',{name: vm.name});
+      };
+
+  We are activating the state studentsSearch and passing param vm.name
+
+
+  Finally we have to change studentsSearchController
+
+
 
