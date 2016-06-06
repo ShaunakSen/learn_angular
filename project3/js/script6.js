@@ -1,19 +1,29 @@
 var myApp = angular.module("myModule", ["ui.router"]);
-myApp.config(function ($stateProvider) {
+myApp.config(function ($stateProvider, $urlMatcherFactoryProvider, $urlRouterProvider) {
     //$locationProvider.html5Mode(true);
     //$routeProvider.caseInsensitiveMatch = true;
 
+    $urlRouterProvider.otherwise("/home");
+    $urlMatcherFactoryProvider.caseInsensitive(true);
     $stateProvider
         .state('home', {
             url: "/home",
             templateUrl: "templates/home.html",
             controller: "homeController",
-            controllerAs: "homeCtrl"
+            controllerAs: "homeCtrl",
+            data: {
+                customData1: "Home State Custom Data 1",
+                customData2: "Home State Custom Data 2"
+            }
         })
         .state("courses", {
             url: "/courses",
             templateUrl: "templates/courses.html",
-            controller: "coursesController as coursesCtrl"
+            controller: "coursesController as coursesCtrl",
+            data: {
+                customData1: "Courses State Custom Data 1",
+                customData2: "Courses State Custom Data 2"
+            }
         })
         .state("students", {
             url: "/students",
@@ -38,15 +48,16 @@ myApp.config(function ($stateProvider) {
             templateUrl: "templates/studentsSearch.html",
             controller: "studentsSearchController as studentsSearchCtrl"
         });
-    /*.otherwise({
-     redirectTo: "/home"
-     });*/
 
 });
 
 
-myApp.controller("homeController", function () {
-    this.message = "Home Page"
+myApp.controller("homeController", function ($state) {
+    this.message = "Home Page";
+    this.homeCustomData1 = $state.current.data.customData1;
+    this.homeCustomData2 = $state.current.data.customData2;
+    this.coursesCustomData1 = $state.get('courses').data.customData1;
+    this.coursesCustomData2 = $state.get('courses').data.customData2;
 });
 
 myApp.controller("coursesController", function () {

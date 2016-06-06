@@ -827,4 +827,106 @@ myApp.controller("studentDetailsController", function ($http, $routeParams) {
   Finally we have to change studentsSearchController
 
 
+  Case insensitive:
+
+  myApp.config(function ($stateProvider, $urlMatcherFactoryProvider) {
+      $urlMatcherFactoryProvider.caseInsensitive(true);
+      ....
+      })
+
+
+
+  Default Route
+
+  If we navigate to route not configured a blank layout displays
+
+  same thing happens when we go to root of url
+
+  To configure default route inject $urlRouterProvide service into the config() function and use otherwise method
+
+  myApp.config(function ($stateProvider, $urlMatcherFactoryProvider, $urlRouterProvider) {
+      $urlRouterProvider.otherwise("/home");
+      ...
+      })
+
+
+  Add custom data to a State
+
+
+  We add it using data property which is a javascript object
+
+  We wanna add custom data to home state and courses state
+
+  .state('home', {
+              url: "/home",
+              templateUrl: "templates/home.html",
+              controller: "homeController",
+              controllerAs: "homeCtrl",
+              data: {
+                  customData1: "Home State Custom Data 1",
+                  customData2: "Home State Custom Data 2"
+              }
+          })
+  .state("courses", {
+              url: "/courses",
+              templateUrl: "templates/courses.html",
+              controller: "coursesController as coursesCtrl",
+              data: {
+                  customData1: "Courses State Custom Data 1",
+                  customData2: "Courses State Custom Data 2"
+              }
+          })
+
+
+  We want to retrieve this custom data from homeController and display it in the home view
+  To read custom data we use $state service
+
+  $state.current gives current state
+
+  myApp.controller("homeController", function ($state) {
+      this.message = "Home Page";
+      this.homeCustomData1 = $state.current.data.customData1;
+      this.homeCustomData2 = $state.current.data.customData2;
+  });
+
+
+  From the same homeController I want to access courses state custom data..How??
+  We cant use current property here as it would return current ie home state. we use get()
+
+  this.coursesCustomData1 = $state.get('courses').data.customData1;
+  this.coursesCustomData2 = $state.get('courses').data.customData2;
+
+
+  We can now display this data in home view
+
+  div class="panel panel-default">
+      <div class="panel-heading">
+          <h3 class="panel-title">Home Custom Data</h3>
+      </div>
+      <div class="panel-body">
+          <h3>Home Custom Data 1</h3>
+          <p>{{homeCtrl.homeCustomData1}}</p>
+          <p>{{homeCtrl.homeCustomData2}}</p>
+      </div>
+  </div>
+  <br/>
+  <div class="panel panel-default">
+      <div class="panel-heading">
+          <h3 class="panel-title">Courses Custom Data</h3>
+      </div>
+      <div class="panel-body">
+          <h3>Courses Custom Data 1</h3>
+          <p>{{homeCtrl.coursesCustomData1}}</p>
+          <p>{{homeCtrl.coursesCustomData2}}</p>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
 
