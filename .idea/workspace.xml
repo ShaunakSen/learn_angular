@@ -1,11 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b713b89-e73b-4906-a827-b128660ae94c" name="Default" comment="setting things up + basics">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/app/styles/shaunak.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project4/conFusion/app/menu.html" afterPath="$PROJECT_DIR$/project4/conFusion/app/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project4/readme.txt" afterPath="$PROJECT_DIR$/project4/readme.txt" />
+    <list default="true" id="8b713b89-e73b-4906-a827-b128660ae94c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/app/images/alberto.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/app/images/buffet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/img/deadpool.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/img/deadpool.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/app/images/elaicheesecake.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/app/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/app/images/uthapizza.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/app/images/vadonut.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/app/images/zucchipakoda.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/js/angular-route.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/js/angular-route.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/js/angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/js/angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/bower_components/angular/angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/js/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/js/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/bower_components/angular/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/templates/courses.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/templates/courses.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/bower_components/font-awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/friendsList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/friendsTable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/templates/home.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/templates/home.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/index2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/index3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/index4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/index5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/css/index6.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/css/index6.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/index6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/index6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/index7.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/bower_components/jquery/dist/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/app/menu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/app/styles/mystyles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/.idea/project2.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/js/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/js/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/js/script2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/js/script2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/js/script3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/js/script3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/js/script4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/js/script4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/js/script5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/js/script5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/js/script6.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/js/script6.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/js/script7.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/js/script7.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/app/styles/shaunak.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/js/stringService.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/js/stringService.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/templates/studentDetails.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/templates/studentDetails.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/templates/students.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/templates/students.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/templates/studentsSearch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/templates/studentsSearch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/webservices/webservice.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/webservices/webservice.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/webservices/webservice2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/webservices/webservice2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/webservices/webservice3.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/webservices/webservice3.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/webservices/webservice4.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/webservices/webservice4.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project1/directives/searchresult.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project1/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project1/index2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project1/index3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project1/index3_second.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project1/js/angular-messages.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project1/js/angular-resource.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project1/js/angular-route.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project1/js/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project1/js/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project1/js/app2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project1/js/app3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project1/js/app4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project1/js/app5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project1/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project1/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project1/pages/mini.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project1/pages/shona.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project1/.idea/udemy_angular.iml" afterPath="$PROJECT_DIR$/project1/.idea/learn_angular.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project1/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/project1/project4/conFusion/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1/.idea/.name" afterPath="$PROJECT_DIR$/project1/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1/.idea/misc.xml" afterPath="$PROJECT_DIR$/project1/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1/.idea/modules.xml" afterPath="$PROJECT_DIR$/project1/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1/.idea/vcs.xml" afterPath="$PROJECT_DIR$/project1/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1/.idea/workspace.xml" afterPath="$PROJECT_DIR$/project1/.idea/workspace.xml" />
     </list>
     <ignored path="learn_angular.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -295,11 +400,6 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-  </component>
-  <component name="Push.Settings">
-    <excluded-roots>
-      <path value="$PROJECT_DIR$/project1" />
-    </excluded-roots>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -613,7 +713,7 @@
       <workItem from="1465225097075" duration="6586000" />
       <workItem from="1465650476995" duration="343000" />
       <workItem from="1465651822022" duration="2859000" />
-      <workItem from="1465660230478" duration="8242000" />
+      <workItem from="1465660230478" duration="8338000" />
     </task>
     <task id="LOCAL-00001" summary="added filter app">
       <created>1463855376016</created>
@@ -699,11 +799,17 @@
       <option name="project" value="LOCAL" />
       <updated>1465660944907</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="finished first app">
+      <created>1465671412117</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1465671412117</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100403000" />
+    <option name="totallyTimeSpent" value="100499000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -769,7 +875,8 @@
     <MESSAGE value="Ui-router implemented search(optional params)" />
     <MESSAGE value="default route + caseInsensitive + custom data through routes" />
     <MESSAGE value="setting things up + basics" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting things up + basics" />
+    <MESSAGE value="finished first app" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished first app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1076,6 +1183,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
