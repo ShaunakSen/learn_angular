@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b713b89-e73b-4906-a827-b128660ae94c" name="Default" comment="setting things up + basics">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/app/images/alberto.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/app/images/buffet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/app/images/elaicheesecake.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/app/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/app/images/uthapizza.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/app/images/vadonut.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/app/images/zucchipakoda.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/bower_components/angular/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/bower_components/angular/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/bower_components/bootstrap/dist/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/bower_components/font-awesome/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/bower_components/jquery/dist/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/app/menu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/app/styles/mystyles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1" afterPath="$PROJECT_DIR$/project1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/app/styles/shaunak.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project4/conFusion/app/menu.html" afterPath="$PROJECT_DIR$/project4/conFusion/app/menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project4/readme.txt" afterPath="$PROJECT_DIR$/project4/readme.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1/.idea/workspace.xml" afterPath="$PROJECT_DIR$/project1/.idea/workspace.xml" />
     </list>
     <ignored path="learn_angular.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,29 +27,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project4/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.90737563">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project4/conFusion/app/menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.5215827">
-              <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
+            <state vertical-scroll-proportion="-13.259259">
+              <caret line="67" column="27" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="27" />
+              <caret line="122" column="10" selection-start-line="107" selection-start-column="8" selection-end-line="122" selection-end-column="10" />
               <folding>
-                <marker date="1465660850290" expanded="false" signature="802:2775" placeholder="[...]" />
-                <marker date="1465660850290" expanded="true" signature="829:1344" placeholder="{&quot;name&quot;: 'Uthapizza'...}" />
-                <marker date="1465660850290" expanded="true" signature="1370:1829" placeholder="{&quot;name&quot;: 'Zucchipakoda'...}" />
-                <marker date="1465660850290" expanded="true" signature="1855:2263" placeholder="{&quot;name&quot;: 'Vadonut'...}" />
-                <marker date="1465660850290" expanded="true" signature="2289:2749" placeholder="{&quot;name&quot;: 'ElaiCheese Cake'...}" />
-                <marker date="1465660850290" expanded="true" signature="2774:2775" placeholder="[...]" />
+                <element signature="e#3192#4744#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shaunak.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project4/conFusion/app/styles/shaunak.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,9 +65,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="Html5" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -125,6 +115,8 @@
         <option value="$PROJECT_DIR$/project2/readme.txt" />
         <option value="$PROJECT_DIR$/project3/templates/home.html" />
         <option value="$PROJECT_DIR$/project4/conFusion/app/menu.html" />
+        <option value="$PROJECT_DIR$/project4/conFusion/app/styles/shaunak.css" />
+        <option value="$PROJECT_DIR$/project4/readme.txt" />
       </list>
     </option>
   </component>
@@ -303,6 +295,11 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="Push.Settings">
+    <excluded-roots>
+      <path value="$PROJECT_DIR$/project1" />
+    </excluded-roots>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -616,7 +613,7 @@
       <workItem from="1465225097075" duration="6586000" />
       <workItem from="1465650476995" duration="343000" />
       <workItem from="1465651822022" duration="2859000" />
-      <workItem from="1465660230478" duration="665000" />
+      <workItem from="1465660230478" duration="8242000" />
     </task>
     <task id="LOCAL-00001" summary="added filter app">
       <created>1463855376016</created>
@@ -696,11 +693,17 @@
       <option name="project" value="LOCAL" />
       <updated>1465234754373</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="setting things up + basics">
+      <created>1465660944907</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1465660944907</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92826000" />
+    <option name="totallyTimeSpent" value="100403000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -713,7 +716,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="40" width="1368" height="729" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -723,22 +726,22 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267974" sideWeight="0.49697885" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31639344" sideWeight="0.4939577" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -775,13 +778,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project2/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="6" selection-start-line="9" selection-start-column="4" selection-end-line="38" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project2/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1104,14 +1100,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project4/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project4/conFusion/app/styles/mystyles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1128,18 +1116,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/project4/conFusion/app/styles/shaunak.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/project4/conFusion/app/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5215827">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
+        <state vertical-scroll-proportion="-13.259259">
+          <caret line="67" column="27" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="27" />
+          <caret line="122" column="10" selection-start-line="107" selection-start-column="8" selection-end-line="122" selection-end-column="10" />
           <folding>
-            <marker date="1465660850290" expanded="false" signature="802:2775" placeholder="[...]" />
-            <marker date="1465660850290" expanded="true" signature="829:1344" placeholder="{&quot;name&quot;: 'Uthapizza'...}" />
-            <marker date="1465660850290" expanded="true" signature="1370:1829" placeholder="{&quot;name&quot;: 'Zucchipakoda'...}" />
-            <marker date="1465660850290" expanded="true" signature="1855:2263" placeholder="{&quot;name&quot;: 'Vadonut'...}" />
-            <marker date="1465660850290" expanded="true" signature="2289:2749" placeholder="{&quot;name&quot;: 'ElaiCheese Cake'...}" />
-            <marker date="1465660850290" expanded="true" signature="2774:2775" placeholder="[...]" />
+            <element signature="e#3192#4744#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project4/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.90737563">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
