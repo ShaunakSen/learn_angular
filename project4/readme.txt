@@ -62,6 +62,29 @@ so in dish data if it finds the appropriate filtText it will display else not
 ______________________________________________________
 
 
+Assignment completed - dishdetail.html
+
+______________________________________________________
+
+Scope
+
+
+Glue between view and controller
+
+Controller gets data from model and attaches it to scope. This scope is available to the view
+
+The topmost scope is called $rootScope
+This is created by angular when your app starts
+As angular traverses DOM it creates new scopes when it encounters some directives
+
+ng-controller creates new scope under $rootScope
+
+So whenever controllers are created within the Angular application,
+the topmost controllers all inherit a scope which is a child of the root scope.
+Now this is where this is tied to the way JavaScript prototype works.
+The child scope, when it is created, automatically the child gets access to everything in that parent scope.
+All the properties of the parent scope.
+
 
 
 
