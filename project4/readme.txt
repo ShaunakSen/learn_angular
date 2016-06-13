@@ -86,6 +86,76 @@ The child scope, when it is created, automatically the child gets access to ever
 All the properties of the parent scope.
 
 
+Form validation
+
+Angular validates the form fields before copying value over to the $scope
+
+Some directives :
+ng-minlength,ng-maxlength,ng-pattern
+
+Angular associates certain properties
+
+name of form: feedbackForm
+name of input: firstName
+
+Properties:
+$pristine -> true if form has not been changed
+$dirty -> rev of $pristine
+$valid -> true if form field/ whole form is valid
+$invalid -> oppo of valid
+
+eg: feedbackForm.firstName.$pristine in form and $scope.feedbackForm.firstName.$pristine in controller
+
+
+Use this in consumeration with bootstrap classes like:
+has-error, has-warning, has-success
+help-block to display helpful messages
+
+
+
+FORM VALIDATION
+
+
+go to contactus.html
+
+Apply a controller ContactController to entire page ie in container
+Also apply a separate controller FeedbackController for the form
+
+so we are using nested controllers
+
+.controller('ContactController',['$scope', function($scope){
+
+}])
+.controller('FeedbackController',['$scope', function($scope){
+
+}]);
+
+FeedbackController is nested inside ContactController so whatever i define inside ContactController is also available in
+FeedbackController
+
+
+In ContactController do:
+
+.controller('ContactController', ['$scope', function ($scope) {
+    $scope.feedback = {
+        mychannel: "",
+        firstName: "",
+        lastName: "",
+        agree: false,
+        email: ""
+    };
+}])
+
+
+Now we can define these vars in the view so that 2 way data binding may apply
+
+
+
+
+
+
+
+
 
 
 
