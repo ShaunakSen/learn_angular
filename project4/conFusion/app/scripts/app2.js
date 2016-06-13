@@ -75,8 +75,34 @@ var myApp = angular.module('confusionApp', [])
             agree: false,
             email: ""
         };
+        $scope.channels = [{value: "tel", label: "Tel."}, {value: "Email", label: "Email"}];
+        $scope.invalidChannelSelection = false;
 
     }])
     .controller('FeedbackController', ['$scope', function ($scope) {
+
+        $scope.sendFeedback = function(){
+            console.log($scope.feedback);
+
+            if($scope.feedback.agree && $scope.feedback.mychannel == ""){
+                $scope.invalidChannelSelection = true;
+                console.log('incorrect option');
+            }
+            else{
+                $scope.invalidChannelSelection = false;
+                //here ideally u would issue AJAX call to send data to server
+                // restore default values now
+                $scope.feedback = {
+                    mychannel: "",
+                    firstName: "",
+                    lastName: "",
+                    agree: false,
+                    email: ""
+                };
+                $scope.feedbackForm.$setPristine();
+                console.log('Restored default values.... ' + $scope.feedback);
+                
+            }
+        }
 
     }]);

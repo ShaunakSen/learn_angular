@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b713b89-e73b-4906-a827-b128660ae94c" name="Default" comment="ok&#10;">
+    <list default="true" id="8b713b89-e73b-4906-a827-b128660ae94c" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/app/images/alberto.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/app/images/buffet.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/img/deadpool.jpg" />
@@ -13,9 +13,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/app/images/vadonut.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/app/images/zucchipakoda.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/.jshintrc" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/Gruntfile.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/js/angular-route.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/js/angular-route.js" />
@@ -25,8 +23,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/js/angular.min.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/js/angular.min.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/bower_components/angular/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/app/scripts/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/app/scripts/app2.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/bower.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/.idea/compiler.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/templates/courses.html" />
@@ -34,7 +30,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/bower_components/font-awesome/css/font-awesome.min.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/friendsList.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/friendsTable.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/gulpfile.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/templates/home.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/templates/home.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/index.html" />
@@ -49,11 +44,9 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/index7.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/bower_components/jquery/dist/jquery.min.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/app/menu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/app/menu2.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/.idea/misc.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/.idea/modules.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/app/styles/mystyles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/package.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/.idea/inspectionProfiles/profiles_settings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/.idea/copyright/profiles_settings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/.idea/project2.iml" />
@@ -114,10 +107,11 @@
       <change type="MOVED" beforePath="$PROJECT_DIR$/project1/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/project1/project4/conFusion/bower_components/bootstrap/dist/css/bootstrap.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1" afterPath="$PROJECT_DIR$/project1" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1/.idea/.name" afterPath="$PROJECT_DIR$/project1/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project4/conFusion/app/menu.html" afterPath="$PROJECT_DIR$/project4/conFusion/app/menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project4/conFusion/app/scripts/app2.js" afterPath="$PROJECT_DIR$/project4/conFusion/app/scripts/app2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project4/conFusion/app/contactus.html" afterPath="$PROJECT_DIR$/project4/conFusion/app/contactus.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1/.idea/misc.xml" afterPath="$PROJECT_DIR$/project1/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1/.idea/modules.xml" afterPath="$PROJECT_DIR$/project1/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project4/readme.txt" afterPath="$PROJECT_DIR$/project4/readme.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1/.idea/vcs.xml" afterPath="$PROJECT_DIR$/project1/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1/.idea/workspace.xml" afterPath="$PROJECT_DIR$/project1/.idea/workspace.xml" />
@@ -146,27 +140,29 @@
         <entry file="file://$PROJECT_DIR$/project4/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+              <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu2.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project4/conFusion/app/menu2.html">
+      <file leaf-file-name="contactus.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project4/conFusion/app/contactus.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32374102">
-              <caret line="23" column="58" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
-              <folding />
+            <state vertical-scroll-proportion="-68.92593">
+              <caret line="154" column="106" selection-start-line="154" selection-start-column="106" selection-end-line="154" selection-end-column="106" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app2.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app2.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project4/conFusion/app/scripts/app2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="26" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.25900516">
+              <caret line="84" column="41" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -184,6 +180,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_UPDATE_ALL_ROOTS" value="false" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -233,10 +230,11 @@
         <option value="$PROJECT_DIR$/project4/conFusion/.jshintrc" />
         <option value="$PROJECT_DIR$/project4/conFusion/package.json" />
         <option value="$PROJECT_DIR$/project4/conFusion/gulpfile.js" />
+        <option value="$PROJECT_DIR$/project4/conFusion/app/menu2.html" />
         <option value="$PROJECT_DIR$/project4/conFusion/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/project4/readme.txt" />
+        <option value="$PROJECT_DIR$/project4/conFusion/app/contactus.html" />
         <option value="$PROJECT_DIR$/project4/conFusion/app/scripts/app2.js" />
-        <option value="$PROJECT_DIR$/project4/conFusion/app/menu2.html" />
       </list>
     </option>
   </component>
@@ -287,6 +285,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -387,9 +386,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -723,7 +721,9 @@
       <workItem from="1465710964016" duration="6568000" />
       <workItem from="1465723827543" duration="264000" />
       <workItem from="1465724160825" duration="6781000" />
-      <workItem from="1465746356708" duration="1017000" />
+      <workItem from="1465746356708" duration="4911000" />
+      <workItem from="1465794291459" duration="174000" />
+      <workItem from="1465832017078" duration="6813000" />
     </task>
     <task id="LOCAL-00001" summary="added filter app">
       <created>1463855376016</created>
@@ -827,11 +827,23 @@
       <option name="project" value="LOCAL" />
       <updated>1465716906904</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added show and hide details feature">
+      <created>1465747588206</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1465747588206</updated>
+    </task>
+    <task id="LOCAL-00019" summary="setting things up for form validation&#10;">
+      <created>1465835616571</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1465835616571</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115882000" />
+    <option name="totallyTimeSpent" value="126763000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -848,6 +860,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5060423" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -864,7 +877,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -926,7 +938,9 @@
     <MESSAGE value="finished first app" />
     <MESSAGE value="ok&#10;" />
     <MESSAGE value="completed first assignment :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed first assignment :)" />
+    <MESSAGE value="added show and hide details feature" />
+    <MESSAGE value="setting things up for form validation&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting things up for form validation&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -935,14 +949,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project4/conFusion/app/scripts/app2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/tables.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42713568">
@@ -1251,21 +1257,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project4/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project4/conFusion/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.030874785">
-          <caret line="1" column="43" selection-start-line="0" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project4/conFusion/app/dishdetail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1281,18 +1272,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project4/conFusion/app/scripts/app2.js">
+    <entry file="file://$PROJECT_DIR$/project4/conFusion/app/menu2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="26" />
+          <caret line="23" column="58" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project4/conFusion/app/menu2.html">
+    <entry file="file://$PROJECT_DIR$/project4/conFusion/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32374102">
-          <caret line="23" column="58" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.030874785">
+          <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+          <folding>
+            <element signature="e#93#2315#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project4/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project4/conFusion/app/contactus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-68.92593">
+          <caret line="154" column="106" selection-start-line="154" selection-start-column="106" selection-end-line="154" selection-end-column="106" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project4/conFusion/app/scripts/app2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25900516">
+          <caret line="84" column="41" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
           <folding />
         </state>
       </provider>
