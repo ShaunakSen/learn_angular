@@ -103,19 +103,31 @@ app.controller('CommentFormController', ['$scope', function ($scope) {
         }
     };
 
-    $scope.displayPreview = function () {
+    $scope.processComment = function () {
+        $scope.addPreview();
+    };
+
+    $scope.addPreview = function () {
         $scope.compatibleObject = {
             author: "",
             rating: 5,
             comment: "",
-            date: "0k"
+            date: "Ok"
         };
         $scope.compatibleObject.author = $scope.comments.name;
         $scope.compatibleObject.rating = $scope.comments.ratings;
         $scope.compatibleObject.comment = $scope.comments.comment;
 
         $scope.dish.comments.push($scope.compatibleObject);
+        //restore defaults
 
+        $scope.comments = {
+            name: "",
+            ratings: 5,
+            comment: ""
+        };
+
+        $scope.commentsForm.$setPristine();
     }
 
 
