@@ -63,33 +63,41 @@
             <div class="col-xs-1"></div>
             <div class="col-xs-10">
                 <h4>Your Comment</h4>
-                <form class="form-horizontal" name="feedbackForm" novalidate>
-                    <div class="form-group">
+                <form class="form-horizontal" name="commentsForm" ng-submit="processComment()" novalidate>
+                    <div class="form-group" ng-class="{'has-error':commentsForm.name.$error.required &&
+                        !commentsForm.name.$pristine}">
                         <label for="name" class="">Your name</label>
-                        <input type="text" class="form-control" name="name" id="name"/>
+                        <input type="text" class="form-control" name="name" id="name"
+                               ng-model="comments.name" required/>
+                        <span class="help-block" ng-show="commentsForm.name.$error.required &&
+                        !commentsForm.name.$pristine">Your name is required</span>
                     </div>
                     <div class="form-group">
                         <label>Your rating:</label>
                         <label class="radio-inline">
-                            <input type="radio" name="ratings" id="inlineRadio1" value="option1"> 1
+                            <input type="radio" name="ratings" ng-model="comments.ratings" id="inlineRadio1" value="option1"> 1
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="ratings" id="inlineRadio2" value="option2"> 2
+                            <input type="radio" name="ratings" ng-model="comments.ratings" id="inlineRadio2" value="option2"> 2
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="ratings" id="inlineRadio3" value="option3"> 3
+                            <input type="radio" name="ratings" ng-model="comments.ratings" id="inlineRadio3" value="option3"> 3
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="ratings" id="inlineRadio4" value="option3"> 4
+                            <input type="radio" name="ratings" ng-model="comments.ratings" id="inlineRadio4" value="option4"> 4
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="ratings" id="inlineRadio5" value="option3" checked> 5
+                            <input type="radio" name="ratings" ng-model="comments.ratings" id="inlineRadio5" value="option5" checked> 5
                         </label>
                     </div>
-                    <div class="form-group">
-                        <textarea class="form-control" rows="3" name="comment" placeholder="YOUR COMMENTS"></textarea>
+                    <div class="form-group"
+                         ng-class="{'has-error':commentsForm.comment.$error.required && !commentsForm.comment.$pristine}">
+                        <textarea class="form-control" rows="3" name="comment" placeholder="YOUR COMMENTS"
+                                ng-model="comments.comment"></textarea>
+                        <span class="help-block" ng-show="validateTextarea()">Your comments are required</span>
                     </div>
-                    <button type="button" name="submit" class="btn btn-primary btn-block">Submit</button>
+                    <button type="button" name="submit" class="btn btn-primary btn-block"
+                            ng-disabled="commentsForm.$invalid">Submit</button>
                 </form>
             </div>
             <div class="col-xs-1"></div>

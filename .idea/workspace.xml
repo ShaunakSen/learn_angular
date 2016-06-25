@@ -23,8 +23,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/js/angular.min.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project3/js/angular.min.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/bower_components/angular/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/app/assgn2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project4/conFusion/app/scripts/assgn2.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project4/conFusion/bower.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/.idea/compiler.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/project2/templates/courses.html" />
@@ -109,9 +107,11 @@
       <change type="MOVED" beforePath="$PROJECT_DIR$/project1/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/project1/project4/conFusion/bower_components/bootstrap/dist/css/bootstrap.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1" afterPath="$PROJECT_DIR$/project1" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1/.idea/.name" afterPath="$PROJECT_DIR$/project1/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project4/conFusion/app/assgn2.html" afterPath="$PROJECT_DIR$/project4/conFusion/app/assgn2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project4/conFusion/app/scripts/assgn2.js" afterPath="$PROJECT_DIR$/project4/conFusion/app/scripts/assgn2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project4/conFusion/app/contactus.html" afterPath="$PROJECT_DIR$/project4/conFusion/app/contactus.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1/.idea/misc.xml" afterPath="$PROJECT_DIR$/project1/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1/.idea/modules.xml" afterPath="$PROJECT_DIR$/project1/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project4/readme.txt" afterPath="$PROJECT_DIR$/project4/readme.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1/.idea/vcs.xml" afterPath="$PROJECT_DIR$/project1/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1/.idea/workspace.xml" afterPath="$PROJECT_DIR$/project1/.idea/workspace.xml" />
@@ -149,8 +149,8 @@
       <file leaf-file-name="contactus.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project4/conFusion/app/contactus.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.3333335">
-              <caret line="74" column="41" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
+            <state vertical-scroll-proportion="-12.666667">
+              <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -168,21 +168,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assgn2.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="assgn2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project4/conFusion/app/assgn2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0323741">
-              <caret line="89" column="105" selection-start-line="89" selection-start-column="105" selection-end-line="89" selection-end-column="105" />
-              <folding />
+            <state vertical-scroll-proportion="-2.8727272">
+              <caret line="93" column="60" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="60" />
+              <folding>
+                <marker date="1466852226957" expanded="true" signature="3098:3201" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assgn2.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="assgn2.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project4/conFusion/app/scripts/assgn2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7530017">
+              <caret line="92" column="53" selection-start-line="92" selection-start-column="53" selection-end-line="92" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -253,10 +255,10 @@
         <option value="$PROJECT_DIR$/project4/conFusion/app/menu2.html" />
         <option value="$PROJECT_DIR$/project4/conFusion/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/project4/conFusion/app/scripts/app2.js" />
-        <option value="$PROJECT_DIR$/project4/conFusion/app/contactus.html" />
         <option value="$PROJECT_DIR$/project4/readme.txt" />
-        <option value="$PROJECT_DIR$/project4/conFusion/app/scripts/assgn2.js" />
+        <option value="$PROJECT_DIR$/project4/conFusion/app/contactus.html" />
         <option value="$PROJECT_DIR$/project4/conFusion/app/assgn2.html" />
+        <option value="$PROJECT_DIR$/project4/conFusion/app/scripts/assgn2.js" />
       </list>
     </option>
   </component>
@@ -745,7 +747,7 @@
       <workItem from="1465746356708" duration="4911000" />
       <workItem from="1465794291459" duration="174000" />
       <workItem from="1465832017078" duration="7476000" />
-      <workItem from="1466833149423" duration="10460000" />
+      <workItem from="1466833149423" duration="12779000" />
     </task>
     <task id="LOCAL-00001" summary="added filter app">
       <created>1463855376016</created>
@@ -873,11 +875,17 @@
       <option name="project" value="LOCAL" />
       <updated>1466843831557</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="building form structure">
+      <created>1466850050268</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1466850050268</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137886000" />
+    <option name="totallyTimeSpent" value="140205000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -976,7 +984,8 @@
     <MESSAGE value="setting things up for form validation&#10;" />
     <MESSAGE value="completed form validation project" />
     <MESSAGE value="understood form validation + bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="understood form validation + bug fixes" />
+    <MESSAGE value="building form structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="building form structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1315,22 +1324,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project4/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="357" column="29" selection-start-line="357" selection-start-column="29" selection-end-line="357" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project4/conFusion/app/scripts/assgn2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project4/conFusion/app/scripts/app2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1339,10 +1332,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/project4/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="357" column="29" selection-start-line="357" selection-start-column="29" selection-end-line="357" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/project4/conFusion/app/contactus.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.3333335">
-          <caret line="74" column="41" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
+        <state vertical-scroll-proportion="-12.666667">
+          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1351,8 +1352,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project4/conFusion/app/assgn2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0323741">
-          <caret line="89" column="105" selection-start-line="89" selection-start-column="105" selection-end-line="89" selection-end-column="105" />
+        <state vertical-scroll-proportion="-2.8727272">
+          <caret line="93" column="60" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="60" />
+          <folding>
+            <marker date="1466852226957" expanded="true" signature="3098:3201" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project4/conFusion/app/scripts/assgn2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7530017">
+          <caret line="92" column="53" selection-start-line="92" selection-start-column="53" selection-end-line="92" selection-end-column="53" />
           <folding />
         </state>
       </provider>
