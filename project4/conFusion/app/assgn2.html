@@ -26,33 +26,33 @@
 <body>
 
 <div class="container">
-    <div class="row row-content" ng-controller="dishDetailController as dishCtrl">
+    <div class="row row-content" ng-controller="dishDetailController">
         <div class="col-xs-12">
             <ul class="media-list tab-pane fade in active">
                 <li class="media">
                     <div class="media-left media-middle">
                         <a href="">
-                            <img class="media-object img-thumbnail" ng-src="{{dishCtrl.dish.image}}" alt=""/>
+                            <img class="media-object img-thumbnail" ng-src="{{dish.image}}" alt=""/>
                         </a>
                     </div>
                     <div class="media-body">
                         <h2 class="media-heading">
-                            {{dishCtrl.dish.name}}
-                            <span class="label label-danger label-xs">{{dishCtrl.dish.label}}</span>
-                            <span class="badge">{{dishCtrl.dish.price | currency}}</span>
+                            {{dish.name}}
+                            <span class="label label-danger label-xs">{{dish.label}}</span>
+                            <span class="badge">{{dish.price | currency}}</span>
                         </h2>
 
-                        <p>{{dishCtrl.dish.description}}</p>
+                        <p>{{dish.description}}</p>
                     </div>
                 </li>
             </ul>
         </div>
         <div class="col-xs-9 col-xs-offset-5">
             <label>
-                <input type="text" class="form-control" ng-model="dishCtrl.search"/>
+                <input type="text" class="form-control" ng-model="search"/>
             </label>
         </div>
-        <blockquote ng-repeat="comment in dishCtrl.dish.comments | orderBy: dishCtrl.order(dishCtrl.search)">
+        <blockquote ng-repeat="comment in dish.comments | orderBy: order(search)">
             <h4>
                 Ratings: {{comment.rating}}
             </h4>
@@ -68,7 +68,7 @@
                         !commentsForm.name.$pristine}">
                         <label for="name" class="">Your name</label>
                         <input type="text" class="form-control" name="name" id="name"
-                               ng-model="comments.name" required/>
+                               ng-model="comments.name" required ng-change="testForm()"/>
                         <span class="help-block" ng-show="commentsForm.name.$error.required &&
                         !commentsForm.name.$pristine">Your name is required</span>
                     </div>
@@ -93,7 +93,7 @@
                     <div class="form-group"
                          ng-class="{'has-error':validateTextarea()}">
                         <textarea class="form-control" rows="3" name="comment" placeholder="YOUR COMMENTS"
-                                ng-model="comments.comment"></textarea>
+                                ng-model="comments.comment" ng-change="testForm()"></textarea>
                         <span class="help-block" ng-show="validateTextarea()">Your comments are required</span>
                     </div>
                     <button type="submit" name="submit" class="btn btn-primary btn-block"

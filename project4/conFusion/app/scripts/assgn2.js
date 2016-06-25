@@ -1,7 +1,7 @@
 var app = angular.module('confusionApp', []);
 
-app.controller('dishDetailController', function () {
-    this.search = '';
+app.controller('dishDetailController', ['$scope', function ($scope) {
+    $scope.search = '';
 
     var dish = {
         name: 'Uthapizza',
@@ -54,8 +54,8 @@ app.controller('dishDetailController', function () {
         return false;
     }
 
-    this.dish = dish;
-    this.order = function (param) {
+    $scope.dish = dish;
+    $scope.order = function (param) {
         orderString = '';
         var acceptable2 = ['-rating', '-date', '-author', '-comment'];
         var acceptable = ['rating', 'date', 'author', 'comment'];
@@ -76,7 +76,7 @@ app.controller('dishDetailController', function () {
             }
         }
     }
-});
+}]);
 
 app.controller('CommentFormController', ['$scope', function ($scope) {
 
@@ -87,7 +87,7 @@ app.controller('CommentFormController', ['$scope', function ($scope) {
         comment: ""
     };
 
-    $scope.validateTextarea = function(){
+    $scope.validateTextarea = function () {
         return $scope.comments['comment'] === "" && !$scope.commentsForm.comment.$pristine;
 
     };
@@ -95,6 +95,19 @@ app.controller('CommentFormController', ['$scope', function ($scope) {
     $scope.processComment = function () {
         console.log("ok");
         console.log($scope.comments)
-    }
+    };
+
+    $scope.testForm = function () {
+        if($scope.commentsForm.$invalid || $scope.comments['comment'] ==""){
+            console.log("invalid")
+        }
+        else{
+            console.log("valid");
+            //u can display preview
+
+        }
+
+    };
+
 
 }]);
