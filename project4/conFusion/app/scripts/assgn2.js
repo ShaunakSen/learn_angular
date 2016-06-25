@@ -88,10 +88,13 @@ app.controller('CommentFormController', ['$scope', function ($scope) {
     };
 
     $scope.validateTextarea = function(){
-        console.log('here');
-        console.log($scope.commentsForm);
         return $scope.comments['comment'] === "" && !$scope.commentsForm.comment.$pristine;
 
+    };
+
+    $scope.processComment = function () {
+        console.log("ok");
+        console.log($scope.comments)
     }
 
 }]);
