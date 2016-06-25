@@ -88,26 +88,35 @@ app.controller('CommentFormController', ['$scope', function ($scope) {
     };
 
     $scope.validateTextarea = function () {
-        return $scope.comments['comment'] === "" && !$scope.commentsForm.comment.$pristine;
+        return $scope.comments['comment'] == "" && !$scope.commentsForm.comment.$pristine;
 
     };
 
-    $scope.processComment = function () {
-        console.log("ok");
-        console.log($scope.comments)
-    };
-
-    $scope.testForm = function () {
-        if($scope.commentsForm.$invalid || $scope.comments['comment'] ==""){
-            console.log("invalid")
+    $scope.validateForm = function () {
+        if ($scope.commentsForm.$invalid) {
+            return false;
         }
-        else{
-            console.log("valid");
-            //u can display preview
-
+        else {
+            var comment = $scope.comments.comment;
+            if (comment != "")
+                return true;
         }
-
     };
+
+    $scope.displayPreview = function () {
+        $scope.compatibleObject = {
+            author: "",
+            rating: 5,
+            comment: "",
+            date: "0k"
+        };
+        $scope.compatibleObject.author = $scope.comments.name;
+        $scope.compatibleObject.rating = $scope.comments.ratings;
+        $scope.compatibleObject.comment = $scope.comments.comment;
+
+        $scope.dish.comments.push($scope.compatibleObject);
+
+    }
 
 
 }]);
