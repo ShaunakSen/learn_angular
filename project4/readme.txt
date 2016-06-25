@@ -339,3 +339,20 @@ $scope.sendFeedback = function(){
 
     }
 }
+
+
+Name is required
+no of stars ny default is 5
+
+Comments is required
+
+As soon as u start typing comments a live preview should appear
+When form becomes valid preview should appear
+
+Button validation
+
+preview should display only when form is valid and not pristine
+
+onsubmit comment joins list of comments and form is pristine
+
+Date automatically introduced
