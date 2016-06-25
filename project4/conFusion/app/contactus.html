@@ -118,10 +118,9 @@
                         <span ng-show="feedbackForm.emailid.$invalid && !feedbackForm.emailid.$pristine"
                                 class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true">
                         </span>
-                        <span ng-show="feedbackForm.emailid.$invalid && !feedbackForm.emailid.$pristine"
-                              class="help-block">Enter a valid Email Address
-                        </span>
-                        <span ng-show="feedbackForm.emailid.$error.required  && !feedbackForm.emailid.$pristine"
+                        <span ng-show=
+                                      "(feedbackForm.emailid.$invalid && !feedbackForm.emailid.$pristine) ||
+                                      (feedbackForm.emailid.$error.required  && !feedbackForm.emailid.$pristine)"
                               class="help-block">Enter a valid Email Address
                         </span>
                     </div>

@@ -88,10 +88,27 @@ All the properties of the parent scope.
 
 Form validation
 
+
+Binding Select:
+
+var channels = [
+    {value:"tel", label:"Tel"},
+    {value:"Email", label:"Email"}
+];
+
+In view:
+
+<select class="form-control" ng-model="feedback.mychannel"
+    ng-options="channel.value as channel.label for channel in channels">
+    <option value="">Tel or Email? </option>
+</select>
+
+
+
 Angular validates the form fields before copying value over to the $scope
 
 Some directives :
-ng-minlength,ng-maxlength,ng-pattern
+ng-minlength,ng-maxlength,ng-pattern(takes in a regexp)
 
 Angular associates certain properties
 
@@ -150,14 +167,175 @@ In ContactController do:
 Now we can define these vars in the view so that 2 way data binding may apply
 
 
+For firstname field:
+
+<input type="text" class="form-control" id="firstname"
+                               name="firstname" placeholder="Enter First Name" ng-model="feedback.firstName" required>
+
+For lastname:
+
+<input type="text" class="form-control" id="lastname"
+                               name="lastname" placeholder="Enter Last Name" ng-model="feedback.lastName" required>
 
 
+For areacode:
+
+<input type="tel" class="form-control" id="areacode"
+                                   name="areacode" placeholder="Area code" ng-model="feedback.tel.areaCode">
 
 
+feedback.tel.areaCode does not exist in feedback object in controller
+But as we are creating ng-model here, it will be automatically be created and added to js feedback object
+
+For telnum:
+
+<input type="tel" class="form-control" id="telnum"
+                               name="telnum" placeholder="Tel. number" ng-model="feedback.tel.number">
 
 
+For emailid:
+
+<input type="email" class="form-control" id="emailid" name="emailid"
+                               placeholder="Email" ng-model="feedback.email" required>
+
+For checkbox:
+
+<input type="checkbox" name="approve" value="" ng-model="feedback.agree">
+
+For textarea:
+
+<textarea class="form-control" id="feedback" ng-model="feedback.comments" name="feedback"
+                                      rows="12"></textarea>
 
 
+comments property does not exist in object yet
 
 
+To the main form tag:
+<form class="form-horizontal" role="form" name="feedbackForm" ng-submit="sendFeedback()" novalidate>
 
+Note: angular uses the name of form to perform validation
+
+Now we add angular validation to form
+
+
+First Name
+
+<span ng-show="feedbackForm.firstname.$error.required && !feedbackForm.firstname.$pristine" class="help-block">
+    Your First Name is required
+</span>
+
+
+Also to the form-group class that contains this input u can apply has-error class to provide some
+nice visual feedback
+
+<div class="form-group" ng-class="{'has-error': feedbackForm.firstname.$error.required && !feedbackForm.firstname.$pristine}">
+
+
+Same for lastname field
+
+emailid:
+
+first 1 want a little red icon to appear inside input if email is invalid
+
+apply class has-feedback and has-error in form-group:
+
+<div class="form-group" ng-class=
+"{'has-error has-feedback': feedbackForm.emailid.$invalid && !feedbackForm.emailid.$pristine}">
+
+
+For icon:
+
+<span ng-show="feedbackForm.emailid.$invalid && !feedbackForm.emailid.$pristine"
+    class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true">
+</span>
+
+Other error msgs for email:
+<span ng-show="feedbackForm.emailid.$invalid && !feedbackForm.emailid.$pristine"
+    class="help-block">Enter a valid Email Address
+</span>
+<span ng-show="feedbackForm.emailid.$error.required  && !feedbackForm.emailid.$pristine"
+    class="help-block">Enter a valid Email Address
+</span>
+
+
+For select element:
+
+We want to dynamically add options to select element
+
+Also we want to display select elements iff user checks checkbox
+
+So to div which contains select elements:
+
+<div class="col-sm-3 col-sm-offset-1" ng-show="feedback.agree">
+
+In ContactController:
+
+$scope.channels = [{value: "tel", label: "Tel."}, {value: "Email", label: "Email"}];
+$scope.invalidChannelSelection = false;
+
+In view:
+
+<select class="form-control" ng-model="feedback.mychannel"
+    ng-options="channel.value as channel.label for channel in channels">
+    <option value="">Tel or Email?</option>
+</select>
+
+Also note we add ng-model="feedback.mychannel" to enable 2 way data binding
+
+Also for that form-group:
+
+<div class="form-group" ng-class="{'has-error': invalidChannelSelection}">
+
+
+Below select element:
+
+<span ng-show="invalidChannelSelection" class="help-block">
+    Select an option..
+</span>
+
+the idea of invalidChannelSelection is to check whether user has selected valid option or not
+
+For button:
+
+<button type="submit" class="btn btn-primary" ng-disabled="feedbackForm.$invalid">
+    Send Feedback
+</button>
+
+ng-disabled="feedbackForm.$invalid"
+
+This ensures that button will be disabled as long as user doesnt fill out the required fields
+
+Now to do validation of select element
+
+In FeedbackController:
+
+$scope.sendFeedback = function(){
+    console.log($scope.feedback);
+}
+
+Adding code for checkbox validation:
+
+$scope.sendFeedback = function(){
+    console.log($scope.feedback);
+
+    if($scope.feedback.agree && $scope.feedback.mychannel == ""){
+        $scope.invalidChannelSelection = true;
+        console.log('incorrect option');
+    }
+    else{
+        $scope.invalidChannelSelection = false;
+        //here ideally u would issue AJAX call to send data to server
+        // restore default values now
+        $scope.feedback = {
+            mychannel: "",
+            firstName: "",
+            lastName: "",
+            agree: false,
+            email: ""
+        };
+        $scope.feedbackForm.$setPristine();
+        console.log('Restored default values.... ' + $scope.feedback);
+
+    }
+}
