@@ -356,3 +356,166 @@ preview should display only when form is valid and not pristine
 onsubmit comment joins list of comments and form is pristine
 
 Date automatically introduced
+
+
+Dependency Injection:
+
+Dependency : your object is dependent on another object
+
+Injection: Passing of dependency to another object
+
+Take an object and use it in ur 2nd object without being aware of exactly how the 1st object is working
+
+2nd object -> dependent object
+
+3 ways this 2nd object can make use of 1st
+1. using new operator.. as in classes
+2. look up dependency using glabal var
+3. Have dependency passed to it where needed
+
+3rd option is more flexible
+
+
+Factory and Services:
+
+Built in services always start with $
+$http, %scope, $rootScope, $location...
+Inject them by DI
+
+We can create our own services
+
+
+5 functions that declare services:
+service(), factory(), provider(), constant(), value()
+
+A factory is expected to return a js object that contains functions
+
+We want to refactor our code to use services..
+
+create app3.js
+
+in app3.js:
+
+var myApp = angular.module('confusionApp', [])
+    .controller('MenuController', ['$scope', function ($scope) {
+        $scope.tab = 1;
+        $scope.filtText = '';
+        $scope.showDetails = true;
+
+        $scope.toggleDetails = function () {
+            $scope.showDetails = !$scope.showDetails
+        };
+
+        $scope.dishes = [
+            {
+                name: 'Uthapizza',
+                image: 'images/uthapizza.png',
+                category: 'mains',
+                label: 'Hot',
+                price: '4.99',
+                description: 'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
+                comment: ''
+            },
+            {
+                name: 'Zucchipakoda',
+                image: 'images/zucchipakoda.png',
+                category: 'appetizer',
+                label: '',
+                price: '1.99',
+                description: 'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce',
+                comment: ''
+            },
+            {
+                name: 'Vadonut',
+                image: 'images/vadonut.png',
+                category: 'appetizer',
+                label: 'New',
+                price: '1.99',
+                description: 'A quintessential ConFusion experience, is it a vada or is it a donut?',
+                comment: ''
+            },
+            {
+                name: 'ElaiCheese Cake',
+                image: 'images/elaicheesecake.png',
+                category: 'dessert',
+                label: '',
+                price: '2.99',
+                description: 'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms',
+                comment: ''
+            }
+        ];
+        $scope.select = function (setTab) {
+            $scope.tab = setTab;
+
+            if (setTab === 2) {
+                $scope.filtText = 'appetizer';
+            }
+            else if (setTab === 3) {
+                $scope.filtText = 'mains';
+            }
+            else if (setTab === 4) {
+                $scope.filtText = 'dessert';
+            }
+            else {
+                $scope.filtText = '';
+            }
+        };
+        $scope.isSelected = function (checkTab) {
+            return ($scope.tab === checkTab);
+        };
+
+    }]);
+
+
+Remove all controller code and put in controllers.js
+
+so app3.js:
+var myApp = angular.module('confusionApp', []);
+
+all code for controller now exists in controllers.js
+
+in menu2.html:
+
+<!--USING SERVICES-->
+<script src="scripts/app3.js"></script>
+<script src="scripts/controllers.js"></script>
+
+Now what we want to do is push the data into a service and call that service whenever necessary
+
+Constructing service
+
+1. create object
+2. specify data
+3. create functions
+4. return object
+
+ //create object
+
+    var menufac = {};
+
+    var dishes = [.. data ..]
+
+    //define functions here
+
+    menufac.getDishes = function(){
+        return dishes;
+    };
+
+    menufac.getDish = function (index) {
+        return dishes[index];
+    };
+
+    return menufac;
+
+
+Using this service using DI:
+
+.controller('MenuController', ['$scope','menuFactory', function ($scope, menuFactory) {
+.....
+
+$scope.dishes = menuFactory.getDishes();
+....
+}
+
+
+
